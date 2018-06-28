@@ -17,3 +17,9 @@ this.myCommits-in-Learning-React
 
     * [Output](https://github.com/KBPsystem777/30-Days-Of-React/commit/1bcd3247e9d26b525945d733c81ccc8a73948043#diff-14b1e33d5bf5649597cdc0e4f684daddR48)
 
+
+### Day 2
+
+- Still studying how to display data in React using the JSON via props.
+
+- I did this method using the `map()` function in JavaScript. Challenge right now is the manipulation of array objects - I need to dig hard on `objects`
