@@ -23,3 +23,13 @@ this.myCommits-in-Learning-React
 - Still studying how to display data in React using the JSON via props.
 
 - I did this method using the `map()` function in JavaScript. Challenge right now is the manipulation of array objects - I need to dig hard on `objects`
+
+
+### Day 3
+
+- Just watched some YouTub videos today discussing `props` in order to have deeper understanding of it. Here are my personal recommendations:
+
+    * [Passing Data with Props](https://www.youtube.com/watch?v=GIU8ekYndKw&index=2&list=PLdVadnqHPMJEY8Dz4DdHAqrounEZJ0x6M&t=0s)
+
+    * [React Props](https://www.youtube.com/watch?v=i1PLMgtG5Qo&index=4&list=PLdVadnqHPMJEY8Dz4DdHAqrounEZJ0x6M&t=2s)
+
