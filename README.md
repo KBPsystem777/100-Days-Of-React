@@ -33,3 +33,12 @@ this.myCommits-in-Learning-React
 
     * [React Props](https://www.youtube.com/watch?v=i1PLMgtG5Qo&index=4&list=PLdVadnqHPMJEY8Dz4DdHAqrounEZJ0x6M&t=2s)
 
+### Day 4
+
+- After days of nightshift and overtime at work, this is my updates:
+
+    * Currently found a new book in GitBook: https://legacy.gitbook.com/book/chrisnoring/react/details
+
+     * Im gonna give [FreeCodeCamp's React Curriculum](https://learn.freecodecamp.org/front-end-libraries/react) a shot today.
+
+    * I am actually overwhelmed by the facts and plenty of resources about React, either online content: videos/ebook/PDFs/blogs and so on. My advise is that stick to your current resource and dont let any material(s) distract your goals. It happens to me all the time.
