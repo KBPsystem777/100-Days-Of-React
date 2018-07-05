@@ -42,3 +42,43 @@ this.myCommits-in-Learning-React
      * Im gonna give [FreeCodeCamp's React Curriculum](https://learn.freecodecamp.org/front-end-libraries/react) a shot today.
 
     * I am actually overwhelmed by the facts and plenty of resources about React, either online content: videos/ebook/PDFs/blogs and so on. My advise is that stick to your current resource and dont let any material(s) distract your goals. It happens to me all the time.
+
+### Day 5
+
+- Early morning activity with these FreccCodeCamp React exercises:
+
+    * [Compose React Components](https://learn.freecodecamp.org/front-end-libraries/react/compose-react-components/)
+
+    * [Render Class Component to DOM](https://learn.freecodecamp.org/front-end-libraries/react/render-a-class-component-to-the-dom)
+
+    * [React Component from Scratch](https://learn.freecodecamp.org/front-end-libraries/react/write-a-react-component-from-scratch)
+
+    * [Pass Props to a Stateless Functional component](https://learn.freecodecamp.org/front-end-libraries/react/pass-props-to-a-stateless-functional-component)
+
+    * [Pass an array as props](https://learn.freecodecamp.org/front-end-libraries/react/pass-an-array-as-props)
+    *Sample:*
+        ```
+        const List = (props) => {
+            return <p>{props.tasks.join(', ')</p>
+        }
+
+        class ToDo extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            render() {
+                return(
+                    <div>
+                        <h1>To Do Lists</h1>
+                        <h2>Today</h2>
+                        <List tasks = {["learn", "code", "learn", "code", "repeat"]}>
+                        <h2>Tomorrow</h2>
+                        <List tasks = {["code", "code", "code"]}>
+                    </div>
+                );
+            }
+        }
+        ```
+
+
