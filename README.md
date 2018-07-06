@@ -82,4 +82,9 @@ this.myCommits-in-Learning-React
         ```
     * [Use default Props](https://learn.freecodecamp.org/front-end-libraries/react/use-default-props)
 
+### Day 6
+
+- Doing FreeCodeCamp [#ReactJS](https://twitter.com/search?q=%23reactjs&src=typd) exercises at 6:00 AM after work.
+
+
 
