@@ -89,6 +89,11 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
 - Sounds clear to me now what's the difference between `props` and `states`. We use `props` for passing absolute data/values in the components. When I say absolute I mean fixed values that you think will not change throughout the lifecycle. In contrary to that, we have `states`. States handles all the changing values in the components.
 
+- Watching and still analyzing these ReactJS videos:
+
+    * [Events in React](https://www.youtube.com/watch?v=OcM__8q6p4c)
+
+    * [State of Components](https://www.youtube.com/watch?v=e5n9j9n83OM)
 
 
 
