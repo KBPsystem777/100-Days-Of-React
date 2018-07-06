@@ -1,6 +1,7 @@
 # 30-Days-Of-React
-this.myCommits-in-Learning-React 
+*this.myCommits-in-Learning-React*
 
+I have previously pushed bunch of React codes to our start-up repo only to found out that I am missing something. I'm missing the true fundamentals of React, which is the most important in learning it. So in order to refresh my memory and keep things running, I paused, reflect and trying to grasp React one more time but this time, in an elegant way > 
 
 ---
 
@@ -85,6 +86,10 @@ this.myCommits-in-Learning-React
 ### Day 6
 
 - Doing FreeCodeCamp [#ReactJS](https://twitter.com/search?q=%23reactjs&src=typd) exercises at 6:00 AM after work.
+
+- Sounds clear to me now what's the difference between `props` and `states`. We use `props` for passing absolute data/values in the components. When I say absolute I mean fixed values that you think will not change throughout the lifecycle. In contrary to that, we have `states`. States handles all the changing values in the components.
+
+
 
 
 
