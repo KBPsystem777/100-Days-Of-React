@@ -101,6 +101,30 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [Override Default Props](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props)
 
-    *
+    * [Use PropTypes to Define the Props you expect](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props/ - Had a hardtime on this challenge. Basically, I need to restrict the props `quantity` to be a number only type of props. So after read and search via [PropTypes NPM docs](https://www.npmjs.com/package/prop-types) I got the hint on what to do. My passing code:
+        ```
+        const Items = (props) => {
+        return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
+        };
+
+        // change code below this line
+        Items.propTypes = {
+        quantity: PropTypes.number.isRequired
+        };
+        // change code above this line
+
+        Items.defaultProps = {
+        quantity: 0
+        };
+
+        class ShoppingCart extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+        render() {
+            return <Items />
+        }
+        };
+        ```
 
 
