@@ -95,6 +95,12 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [State of Components](https://www.youtube.com/watch?v=e5n9j9n83OM)
 
+### Day 7
 
+- Doing ReactJS activities before going to work:
+
+    * [Override Default Props](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props)
+
+    *
 
 
