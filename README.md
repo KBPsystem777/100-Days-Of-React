@@ -1,4 +1,4 @@
-# 30-Days-Of-React
+# Koleen BP's 30-Days-Of-React journey
 *this.myCommits-in-Learning-React*
 
 I have previously pushed bunch of React codes to our start-up repo only to found out that I am missing something. I'm missing the true fundamentals of React, which is the most important in learning it. So in order to refresh my memory and keep things running, I paused, reflect and trying to grasp React one more time but this time, in an elegant way > 
