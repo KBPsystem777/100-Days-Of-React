@@ -164,3 +164,47 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         }
         };
         ```
+
+### Day 8
+
+- Rainy morning here @CyberGate2, still awake and answering this React exercise before going home:
+    *[Review Using props with Stateless Functional Component](https://learn.freecodecamp.org/front-end-libraries/react/review-using-props-with-stateless-functional-components) - Finally in here I learned how to validate props or assign a property to props in here I was tasked to restrict the props to be `string` only. And then assign a default `prop` value. Here's my solution:
+    
+    ```
+    class Camper extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return(
+        <div>
+            <p>{this.props.name}</p>
+        </div>
+        );
+    }
+    }
+
+    Camper.propTypes = {
+    name: PropTypes.string.isRequired
+    };
+
+    Camper.defaultProps = {
+    name: 'CamperBot'
+    };
+
+
+    class CampSite extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+        <div>
+            <Camper name = {'KBPsystem'} />
+        </div>
+        );
+    }
+    };
+    // change code below this line
+
+    ```
