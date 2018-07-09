@@ -101,7 +101,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [Override Default Props](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props)
 
-    * [Use PropTypes to Define the Props you expect](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props/ - Had a hardtime on this challenge. Basically, I need to restrict the props `quantity` to be a number only type of props. So after read and search via [PropTypes NPM docs](https://www.npmjs.com/package/prop-types) I got the hint on what to do. My passing code:
+    * [Use PropTypes to Define the Props you expect](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props/) - Had a hardtime on this challenge. Basically, I need to restrict the props `quantity` to be a number only type of props. So after read and search via [PropTypes NPM docs](https://www.npmjs.com/package/prop-types) I got the hint on what to do. My passing code:
         ```
         const Items = (props) => {
         return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
@@ -126,5 +126,41 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         }
         };
         ```
+    * [Access Props using this.props](https://learn.freecodecamp.org/front-end-libraries/react/access-props-using-this-props) - This activity is kinda actually the same with what I did on Day 1. Here is my complete solution for the problem:
 
+        ```
+        class ReturnTempPassword extends React.Component {
+        constructor(props) {
+            super(props);
 
+        }
+        render() {
+            return (
+                <div>
+                    { /* change code below this line */ }
+                    <p>Your temporary password is: <strong>{this.props.tempPassword}</strong></p>
+                    { /* change code above this line */ }
+                </div>
+            );
+        }
+        };
+
+        class ResetPassword extends React.Component {
+        constructor(props) {
+            super(props);
+
+        }
+        render() {
+            return (
+                <div>
+                <h2>Reset Password</h2>
+                <h3>We've generated a new temporary password for you.</h3>
+                <h3>Please reset this password from your account settings ASAP.</h3>
+                { /* change code below this line */ }
+                <ReturnTempPassword tempPassword={'qwertyui'} />
+                { /* change code above this line */ }
+                </div>
+            );
+        }
+        };
+        ```
