@@ -211,5 +211,49 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
 ### Day 9
 
-- Just got busy at work so I'm home now solving FreeCodeCamp's ReactJS problems
+- Just got busy at work so I'm home now solving FreeCodeCamp's ReactJS problems. Answered the following exercises:
+    * [Creating Stateful Components](https://learn.freecodecamp.org/front-end-libraries/react/create-a-stateful-component/).
+        My Solution:
 
+        ```
+        class StatefulComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            // initialize state here
+            this.state = {
+            name: 'Koleen Paunon'
+
+            }
+        }
+        render() {
+            return (
+            <div>
+                <h1>{this.state.name}</h1>
+            </div>
+            );
+        }
+        };
+        ```
+    * [Render State in the User Interface](https://learn.freecodecamp.org/front-end-libraries/react/render-state-in-the-user-interface) - One thing I learned here is that `state` state is responsible in tracking your data changes in your app and then renders those change on the UI. When state data updates, it triggers a re-render of UI in all components up to child level that is using the same data as prop. Here is my solution for the activity:
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            name: 'freeCodeCamp'
+            }
+        }
+        render() {
+            return (
+            <div>
+                { /* change code below this line */ }
+                <h1>{this.state.name}</h1>
+                { /* change code above this line */ }
+            </div>
+            );
+        }
+        };
+        ```
+
+
+        
