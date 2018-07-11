@@ -1,5 +1,5 @@
-# Koleen BP's 30-Days-Of-React journey
-*this.myCommits-in-Learning-React*
+# Koleen Paunon's 30-Days-Of-React journey
+*This serves as my coding logs throughout my #ReactJS learning*
 
 I have previously pushed bunch of React codes to our start-up repo only to found out that I am missing something. I'm missing the true fundamentals of React, which is the most important in learning it. So in order to refresh my memory and keep things running, I paused, reflect and trying to grasp React one more time but this time, in an elegant way > 
 
@@ -208,3 +208,8 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         // change code below this line
 
         ```
+
+### Day 9
+
+- Just got busy at work so I'm home now solving FreeCodeCamp's ReactJS problems
+
