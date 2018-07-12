@@ -19,14 +19,14 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * [Output](https://github.com/KBPsystem777/30-Days-Of-React/commit/1bcd3247e9d26b525945d733c81ccc8a73948043#diff-14b1e33d5bf5649597cdc0e4f684daddR48)
 
 
-### Day 2
+### [Day 2](#day-2)
 
 - Still studying how to display data in React using the JSON via props.
 
 - I did this method using the `map()` function in JavaScript. Challenge right now is the manipulation of array objects - I need to dig hard on `objects`
 
 
-### Day 3
+### [Day 3](#day-3)
 
 - Just watched some YouTub videos today discussing `props` in order to have deeper understanding of it. Here are my personal recommendations:
 
@@ -34,7 +34,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [React Props](https://www.youtube.com/watch?v=i1PLMgtG5Qo&index=4&list=PLdVadnqHPMJEY8Dz4DdHAqrounEZJ0x6M&t=2s)
 
-### Day 4
+### [Day 4](#day-4)
 
 - After days of nightshift and overtime at work, this is my updates:
 
@@ -44,7 +44,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * I am actually overwhelmed by the facts and plenty of resources about React, either online content: videos/ebook/PDFs/blogs and so on. My advise is that stick to your current resource and dont let any material(s) distract your goals. It happens to me all the time.
 
-### Day 5
+### [Day 5](#day-5)
 
 - Early morning activity with these FreccCodeCamp React exercises:
 
@@ -83,7 +83,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         ```
     * [Use default Props](https://learn.freecodecamp.org/front-end-libraries/react/use-default-props)
 
-### Day 6
+### [Day 6](#day-6)
 
 - Doing FreeCodeCamp [#ReactJS](https://twitter.com/search?q=%23reactjs&src=typd) exercises at 6:00 AM after work.
 
@@ -95,7 +95,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [State of Components](https://www.youtube.com/watch?v=e5n9j9n83OM)
 
-### Day 7
+### [Day 7](#day-7)
 
 - Doing ReactJS activities before going to work:
 
@@ -165,7 +165,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         };
         ```
 
-### Day 8
+### [Day 8](#day-9)
 
 - Rainy morning here @CyberGate2, still awake and answering this React exercise before going home:
     * [Review Using props with Stateless Functional Component](https://learn.freecodecamp.org/front-end-libraries/react/review-using-props-with-stateless-functional-components) - Finally in here I learned how to validate props or assign a property to props in here I was tasked to restrict the props to be `string` only. And then assign a default `prop` value. Here's my solution:
@@ -209,7 +209,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
         ```
 
-### Day 9
+### [Day 9](#day-9)
 
 - Just got busy at work so I'm home now solving FreeCodeCamp's ReactJS problems. Answered the following exercises:
     * [Creating Stateful Components](https://learn.freecodecamp.org/front-end-libraries/react/create-a-stateful-component/).
