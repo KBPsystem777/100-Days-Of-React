@@ -165,7 +165,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         };
         ```
 
-### [Day 8](#day-9)
+### [Day 8](#day-8)
 
 - Rainy morning here @CyberGate2, still awake and answering this React exercise before going home:
     * [Review Using props with Stateless Functional Component](https://learn.freecodecamp.org/front-end-libraries/react/review-using-props-with-stateless-functional-components) - Finally in here I learned how to validate props or assign a property to props in here I was tasked to restrict the props to be `string` only. And then assign a default `prop` value. Here's my solution:
