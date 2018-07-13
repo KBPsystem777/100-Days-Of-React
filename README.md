@@ -256,4 +256,38 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         ```
 
 
+### [Day 10](#day-9)
+
+- Currently here at [Lopez, Quezon](https://en.wikipedia.org/wiki/Lopez,_Quezon) doing the following ReactJS challenges:
+    
+    * [Render State in the User Interface Another Way](https://learn.freecodecamp.org/front-end-libraries/react/render-state-in-the-user-interface-another-way) - Teaches an idea on how to access React `state` using pure JavaScript. My Solution:
+
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            name: 'freeCodeCamp'
+            }
+        }
+        render() {
+            // change code below this line
+            const name = this.state.name
+            // change code above this line
+            return (
+            <div>
+                { /* change code below this line */ }
+                <h1>{ name }</h1>
+                { /* change code above this line */ }
+            </div>
+            );
+        }
+        };
+        ```
+
+
+
+
+
+
         
