@@ -285,9 +285,36 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         };
         ```
 
+###  [Day 11](#day-11)
 
+- I'm back home after almost 7 hours of driving. [Pacquiao won again today!](http://www.espn.com/boxing/story/_/id/24100683/manny-pacquiao-ko-lucas-matthysse-7th-round-claim-wba-welterweight-title) Still working on my React skills/ here's what I'm working on today:
+    * [Set State with this.setState](https://learn.freecodecamp.org/front-end-libraries/react/set-state-with-this-setstate) - On this activity, you'll understand how your app will display real time results when somthing changed on the data, like for example you what to display something on the UI after a button has been clicked. You may consult React Docs [here](https://reactjs.org/docs/state-and-lifecycle.html). Example from the activity:
 
-
-
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            name: 'Initial State'
+            };
+            this.handleClick = this.handleClick.bind(this);
+        }
+        handleClick() {
+            // change code below this line
+            this.setState({
+            name: 'React Rocks!'
+            })
+            // change code above this line
+        }
+        render() {
+            return (
+            <div>
+                <button onClick={this.handleClick}>Click Me</button>
+                <h1>{this.state.name}</h1>
+            </div>
+            );
+        }
+        };
+        ```
 
         
