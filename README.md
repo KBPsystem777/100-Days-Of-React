@@ -318,4 +318,4 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         ```
 ### [Day 12](#day-12) 
 
-- July 17, 2018 - I got flu today and we have a typhoon here in Manila right now. Trying to solve some ReactJS activities before slowing down and take a rest.
+- July 17, 2018 - I got flu today and we have a typhoon here in Manila right now. Trying to solve some ReactJS activities before slowing down and take a rest. Actually, I should say I have no activity for this day cause my flu got worse. I will continue on Day 13 :)
