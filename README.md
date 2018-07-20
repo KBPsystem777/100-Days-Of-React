@@ -322,4 +322,35 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
 ### [Day 13](#day-13)
 
-- July 20, 2018 - I'm back after days of fighting to flu and work deadlines. Today, I learned binding `this` to a Class method.
+- July 20, 2018 - I'm back after days of fighting to flu and work deadlines. Today, I learned binding `this` to a Class method. Worked on this challenge which is a lot of `this`
+
+    * [Bind 'this' to a Class Method](https://learn.freecodecamp.org/front-end-libraries/react/bind-this-to-a-class-method) - The exercise is actually re-introducing me to *React Events handling*. I said re-introduction because I've done it before on some of my projects but the problem is that I didn't understand it. 
+    So here is my solution to the problem.
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            itemCount: 0
+            };
+            // change code below this line
+            this.addItem = this.addItem.bind(this);
+            // change code above this line
+        }
+        addItem() {
+            this.setState({
+            itemCount: this.state.itemCount + 1
+            });
+        }
+        render() {
+            return (
+            <div>
+                { /* change code below this line */ }
+                <button onClick={ this.addItem }>Click Me</button>
+                { /* change code above this line */ }
+                <h1>Current Item Count: {this.state.itemCount}</h1>
+            </div>
+            );
+        }
+        };
+        ```
