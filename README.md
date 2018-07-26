@@ -354,3 +354,46 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         }
         };
         ```
+
+### [Day 14](#day-14)
+
+- July 27, 2018 - I'm back to React. I am still as work right now. It's 4:16am and I am studying this activity from FreeCodeCamp. 
+    - [React: Use State to Toggle an Element](https://learn.freecodecamp.org/front-end-libraries/react/use-state-to-toggle-an-element). The main objective on this activity is that there is a `<button>` and this button should show something on the screen after I clicked it. And once I clicked it again, that text display on my screen should be gone, and vice versa. So i short, a pop up text will come and go after I click the button. Like ON-OFF-ON-OFF...
+    My solution:
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            visibility: false
+            };
+            // change code below this line
+            this.toggleVisibility = this.toggleVisibility.bind(this);
+
+            // change code above this line
+        }
+        // change code below this line
+        toggleVisibility(){
+            this.setState({
+            visibility: !this.state.visibility
+            });
+        };
+        // change code above this line
+        render() {
+            if (this.state.visibility) {
+            return (
+                <div>
+                <button onClick={this.toggleVisibility}>Click Me</button>
+                <h1>Now you see me!</h1>
+                </div>
+            );
+            } else {
+            return (
+                <div>
+                <button onClick={this.toggleVisibility}>Click Me</button>
+                </div>
+            );
+            }
+        }
+        };
+        ```
