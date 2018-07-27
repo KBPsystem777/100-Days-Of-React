@@ -397,5 +397,56 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         }
         };
         ```
- - I got the chance to watch this video: [React State and Class](https://www.youtube.com/watch?v=RTAxNwa0KzY) so that I can refresh my memory about States for the past days that I havent touched React.
- 
+ - I got the chance to watch this video: [React State and Class](https://www.youtube.com/watch?v=RTAxNwa0KzY) so that I can refresh my memory about States for the past days that I havent touched React. Also this weekend, I am planning to go through these React tutorials playlist: [React Tutorial 2017](https://www.youtube.com/playlist?list=PLkEZWD8wbltnXlfyhS5qSMTNb26utkOkI) by Ihatetomatoes
+
+- I solved the *[Write a Simple Counter](https://learn.freecodecamp.org/front-end-libraries/react/write-a-simple-counter)* exercise. The objectve here is make a counter which has 3 buttons namely, Increment, Decrement and Reset. The initial state on the counter is 0. Clicking the each buttons will have the following effect:
+    * *Increment*: +1
+    * *Decrement*: -1
+    * *Reset*: Total Reset. Rolls-back the counter value to 0
+    > I experienced some bugs on this exercise which I appended on the issue [#17545](https://github.com/freeCodeCamp/freeCodeCamp/issues/17545#issuecomment-408548253)
+
+    ```
+    class Counter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        count: 0
+        };
+        // change code below this line
+        this.increment = this.increment.bind(this)
+        this.decrement = this.decrement.bind(this)
+        this.reset = this.reset.bind(this)
+        // change code above this line
+    }
+    // change code below this line
+    increment(){
+        this.setState({
+        count: this.state.count + 1
+        });
+    };
+
+    decrement(){
+        this.setState({
+        count: this.state.count -1
+        });
+    };
+
+    reset(){
+
+        this.setState({
+        count: 0
+        })
+    }
+    // change code above this line
+    render() {
+        return (
+        <div>
+            <button className='inc' onClick={this.increment}>Increment!</button>
+            <button className='dec' onClick={this.decrement}>Decrement!</button>
+            <button className='reset' onClick={this.reset}>Reset</button>
+            <h1>Current Count: {this.state.count}</h1>
+        </div>
+        );
+    }
+    };
+    ```
