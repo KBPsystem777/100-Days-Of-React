@@ -397,3 +397,5 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         }
         };
         ```
+ - I got the chance to watch this video: [React State and Class](https://www.youtube.com/watch?v=RTAxNwa0KzY) so that I can refresh my memory about States for the past days that I havent touched React.
+ 
