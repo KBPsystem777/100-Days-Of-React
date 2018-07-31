@@ -450,3 +450,43 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     }
     };
     ```
+
+### [Day 15](#day-15)
+
+- July 31, 2018. By the way I created a Messaging app yesterday for our start up group. You may check out [this](https://github.com/KBPsystem777/Chat-Application). Alrigh that project is a `work-in-progress` app, and I am hoping to finish it as fast as possible. Early morning today, I am hacking this FCC exercise: [Create a Controlled Input](https://learn.freecodecamp.org/front-end-libraries/react/create-a-controlled-input).
+This challenge is preparing you for the future! It actually introduces you how React works in forms and input elements in html. The objective of the challenge is you type something on the `input` field and you should instruct React to display what was type on the input area. Here is my working solution for the challenge:
+
+    ```
+    class ControlledInput extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        input: ''
+        };
+        // change code below this line
+        this.handleChange = this.handleChange.bind(this);
+        // change code above this line
+    }
+    // change code below this line
+    handleChange(event){
+        event.preventDefault();
+        this.setState({
+        input: event.target.value
+        });
+    }
+    // change code above this line
+    render() {
+        return (
+        <div>
+            { /* change code below this line */}
+            <input value = { this.state.input} onChange={this.handleChange.bind(this)}></input>
+            { /* change code above this line */}
+            <h4>Controlled Input:</h4>
+            <p>{this.state.input}</p>
+        </div>
+        );
+    }
+    };
+    ```
+    This docs helped me understand the problem better:
+    > https://guide.freecodecamp.org/certifications/front-end-libraries/react/create-a-controlled-input
