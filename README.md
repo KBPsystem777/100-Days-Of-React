@@ -490,3 +490,54 @@ This challenge is preparing you for the future! It actually introduces you how R
     ```
     This docs helped me understand the problem better:
     > [https://guide.freecodecamp.org/certifications/front-end-libraries/react/create-a-controlled-input](https://guide.freecodecamp.org/certifications/front-end-libraries/react/create-a-controlled-input)
+
+### [Day 16](#day-16)
+
+- August 1, 2018. My birthday coming soon! This activity is just a continuation of the [Day 15](#day-15) exercise.
+The objective here is almost the same with Day 15. So you will need to enter some text on the input field and once you clicked `Submit` button, React should display your inputs on `h1` tag.
+There is 2 functions created in here the `handleChange` and `handleSubmit`. These functions should handle the events being fired on the front end.
+`handleChange` => keeps track of the user input on the input field.
+`handleSubmit` => gets the value of the input element and pass it on the h1 tag as soon as the submit button was fired up. Here is my solution for the challenge:
+
+    ```
+    class MyForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        input: '',
+        submit: ''
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleChange(event) {
+        event.preventDefault();
+        this.setState({
+        input: event.target.value
+        });
+    }
+    handleSubmit(event) {
+        // change code below this line
+        event.preventDefault();
+        this.setState({
+        submit: this.state.input
+        })
+        // change code above this line
+    }
+    render() {
+        return (
+        <div>
+            <form onSubmit={this.handleSubmit}>
+            { /* change code below this line */ }
+            <input value = {this.state.input} onChange = {this.handleChange}></input>
+            { /* change code above this line */ }
+            <button type='submit' onClick = {this.handleSubmit.bind(this)}>Submit!</button>
+            </form>
+            { /* change code below this line */ }
+            <h1>{this.state.submit}</h1>
+            { /* change code above this line */ }
+        </div>
+        );
+    }
+    };
+    ```
