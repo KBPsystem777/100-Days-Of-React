@@ -541,3 +541,38 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
     }
     };
     ```
+
+### [Day 17](#day-17)
+- August 2, 2018. The activity for today is [Pass State as Props to Child Components](https://learn.freecodecamp.org/front-end-libraries/react/pass-state-as-props-to-child-components). This opens my mind on how React works with it's components like passing data from one component to another (parent-to-child, child-parent and sibling-siblings). On the said activity, I was task to allow the `Nav` component which is the child to access the data in the parent constructor which is the `App` component, and display it on the UI. This [Stack overflow post](https://stackoverflow.com/a/39401252/7478732) helped me in solving the problem. Here is my working solution:
+
+    ```
+    class MyApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        name: 'CamperBot'
+        }
+    }
+    render() {
+        return (
+        <div>
+            <Navbar name={this.state.name} />
+        </div>
+        );
+    }
+    };
+
+    class Navbar extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+        <div>
+        <h1>Hello, my name is: {this.props.name} </h1>
+        </div>
+        );
+    }
+    };
+    ```
+    
