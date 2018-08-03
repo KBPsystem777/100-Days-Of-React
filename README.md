@@ -575,4 +575,68 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
     }
     };
     ```
+### [Day 18](#day-18)
+
+- August 3, 2018. I am currently doing the [Pass a Callback as Props](https://learn.freecodecamp.org/front-end-libraries/react/pass-a-callback-as-props) and I am actually clueless on what's going on here. Basically, this challenge is just a continuation of the previous one, and almost identical with the last 2-3 exercises.
+Okay, so there is a parent component, whic is ths `MyApp` and it has two child components namely `GetInput` which is responsible in rendering the input element on the UI as well as an `h3` element. Another one is the `RenderInput` component which is responsible in displaying the user input from the `GetInput` component. `GetInput` should be handling all the changes on the Input element and pass those data on the `MyApp` component. Here is my solution for this:
+
+    ```
+    class MyApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        inputValue: ''
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event) {
+        event.preventDefault();
+        this.setState({
+        inputValue: event.target.value
+        });
+    }
+    render() {
+        return (
+        <div>
+            { /* change code below this line */ }
+            <GetInput input={this.state.inputValue} handleChange={this.handleChange}/>
+            <RenderInput input={this.state.inputValue}/>
+            { /* change code above this line */ }
+        </div>
+        );
+    }
+    };
+
+    class GetInput extends React.Component {
+    constructor(props) {
+        super(props);
+        
+    }
+    render() {
+        return (
+        <div>
+            <h3>Get Input:</h3>
+            <input
+            value={this.props.input}
+            onChange={this.props.handleChange}/>
+        </div>
+        );
+    }
+    };
+
+    class RenderInput extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+        <div>
+            <h3>Input Render:</h3>
+            <p>{this.props.input}</p>
+        </div>
+        );
+    }
+    };
+    ```
+
     
