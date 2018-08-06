@@ -639,4 +639,19 @@ Okay, so there is a parent component, whic is ths `MyApp` and it has two child c
     };
     ```
 
-    
+### [Day 19](#day-19)
+
+- August 4, 2018. Happy Weekend!!! This day, we are being introduced by FreeCodeCamp to React Lifecycle methods or others calls it Lifecycle hooks. Here are the list of Lifecycles:
+
+    * [`componentWillMount()`](https://accenture.com)
+    * [`componentDidMount()`]()
+    * [`componentWillReceiveProps()`]()
+    * [`shouldComponentUpdate()`]()
+    * [`componentWillUpdate()`]()
+    * [`componentDidUpdate()`]()
+    * [`componentWillUnmount`]()
+
+Good intro about React LifeCycle: https://www.youtube.com/watch?v=Oioo0IdoEls
+
+
+
