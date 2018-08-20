@@ -651,7 +651,7 @@ Okay, so there is a parent component, whic is ths `MyApp` and it has two child c
     * [`componentDidUpdate()`](https://reactjs.org/docs/react-component.html#componentdidupdate)
     * [`componentWillUnmount`](https://reactjs.org/docs/react-component.html#componentwillunmount)
 
-Good intro about React LifeCycle: https://www.youtube.com/watch?v=Oioo0IdoEls
+Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](https://www.youtube.com/watch?v=Oioo0IdoEls)
 
 
 ### [Day 20](#day-20)
