@@ -28,7 +28,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
 ### [Day 3](#day-3)
 
-- Just watched some YouTub videos today discussing `props` in order to have deeper understanding of it. Here are my personal recommendations:
+- Just watched some YouTube videos today discussing `props` in order to have deeper understanding of it. Here are my personal recommendations:
 
     * [Passing Data with Props](https://www.youtube.com/watch?v=GIU8ekYndKw&index=2&list=PLdVadnqHPMJEY8Dz4DdHAqrounEZJ0x6M&t=0s)
 
@@ -644,12 +644,12 @@ Okay, so there is a parent component, whic is ths `MyApp` and it has two child c
 - August 4, 2018. Happy Weekend!!! This day, we are being introduced by FreeCodeCamp to React Lifecycle methods or others calls it Lifecycle hooks. Here are the list of Lifecycles:
 
     * [`componentWillMount()`]()
-    * [`componentDidMount()`]()
+    * [`componentDidMount()`](https://reactjs.org/docs/react-component.html#componentdidmount)
     * [`componentWillReceiveProps()`]()
-    * [`shouldComponentUpdate()`]()
+    * [`shouldComponentUpdate()`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate)
     * [`componentWillUpdate()`]()
-    * [`componentDidUpdate()`]()
-    * [`componentWillUnmount`]()
+    * [`componentDidUpdate()`](https://reactjs.org/docs/react-component.html#componentdidupdate)
+    * [`componentWillUnmount`](https://reactjs.org/docs/react-component.html#componentwillunmount)
 
 Good intro about React LifeCycle: https://www.youtube.com/watch?v=Oioo0IdoEls
 
@@ -657,3 +657,5 @@ Good intro about React LifeCycle: https://www.youtube.com/watch?v=Oioo0IdoEls
 ### [Day 20](#day-20)
 
 - August 9, 2018. Been busy lately with work and projects at our start up like instant messaging app and studying [WebSocket](https://www.npmjs.com/package/websocket), [Socket.IO](https://socket.io/).
+
+- August 21, 2018. Finally, got the chance to continue this journey! My birthday just got passed and it was awesome. Today I just added some links on the LifeCycle APIs above on [Day 19](#day-19)
