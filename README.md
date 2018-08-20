@@ -643,11 +643,11 @@ Okay, so there is a parent component, whic is ths `MyApp` and it has two child c
 
 - August 4, 2018. Happy Weekend!!! This day, we are being introduced by FreeCodeCamp to React Lifecycle methods or others calls it Lifecycle hooks. Here are the list of Lifecycles:
 
-    * [`componentWillMount()`]()
+    * `componentWillMount()`
     * [`componentDidMount()`](https://reactjs.org/docs/react-component.html#componentdidmount)
-    * [`componentWillReceiveProps()`]()
+    * `componentWillReceiveProps()`
     * [`shouldComponentUpdate()`](https://reactjs.org/docs/react-component.html#shouldcomponentupdate)
-    * [`componentWillUpdate()`]()
+    * `componentWillUpdate()`
     * [`componentDidUpdate()`](https://reactjs.org/docs/react-component.html#componentdidupdate)
     * [`componentWillUnmount`](https://reactjs.org/docs/react-component.html#componentwillunmount)
 
