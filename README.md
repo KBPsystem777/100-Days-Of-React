@@ -658,4 +658,35 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 
 - August 9, 2018. Been busy lately with work and projects at our start up like instant messaging app and studying [WebSocket](https://www.npmjs.com/package/websocket), [Socket.IO](https://socket.io/).
 
-- August 21, 2018. Finally, got the chance to continue this journey! My birthday just got passed and it was awesome. Today I just added some links on the LifeCycle APIs above on [Day 19](#day-19)
+- August 21, 2018. Finally, got the chance to continue this journey! My birthday just got passed and it was awesome. Today I just added some links on the LifeCycle APIs above on [Day 19](#day-19). Aside from that I was able to complete the prototype for our chat application running in React. I called it [Reactifyd-Chat](https://reactfyd-chat-nlpiwzxyxo.now.sh/)
+
+
+- August 22, 2018. Back to back in React. And solved the following exercises:
+    * [Use the Lifecycle Method componentDidMount](https://learn.freecodecamp.org/front-end-libraries/react/use-the-lifecycle-method-componentdidmount) - On this activity, the explanations are pretty clear and main objective here is that you are calling an API endpoint that contains the data which is the total numbers of `activeUsers`. So, the plan is that on the front end, once `MyComponent` was render into the DOM, you should be able to display on the UI how many users are active right now, based on the data stored on `activeUsers` API, after 2.5 seconds. Looks tough huh? Well not really, here is my working code:
+
+    ```
+    class MyComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        activeUsers: null
+        };
+    }
+    componentDidMount() {
+        setTimeout( () => {
+        this.setState({
+            activeUsers: 1273
+        });
+        }, 2500);
+    }
+    render() {
+        return (
+        <div>
+            <h1>Active Users: { this.state.activeUsers }</h1>
+        </div>
+        );
+    }
+    };
+    ```
+
+    
