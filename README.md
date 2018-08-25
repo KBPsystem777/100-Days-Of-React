@@ -690,4 +690,5 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
     ```
 ### [Day 21](#day-21)
     
-    - August 24, 2018 - 
+    - August 25, 2018 - Learning Event Listeners in React
+    
