@@ -664,32 +664,69 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 22, 2018. Back to back in React. And solved the following exercises:
     * [Use the Lifecycle Method componentDidMount](https://learn.freecodecamp.org/front-end-libraries/react/use-the-lifecycle-method-componentdidmount) - On this activity, the explanations are pretty clear and main objective here is that you are calling an API endpoint that contains the data which is the total numbers of `activeUsers`. So, the plan is that on the front end, once `MyComponent` was render into the DOM, you should be able to display on the UI how many users are active right now, based on the data stored on `activeUsers` API, after 2.5 seconds. Looks tough huh? Well not really, here is my working code:
 
+        ```
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            activeUsers: null
+            };
+        }
+        componentDidMount() {
+            setTimeout( () => {
+            this.setState({
+                activeUsers: 1273
+            });
+            }, 2500);
+        }
+        render() {
+            return (
+            <div>
+                <h1>Active Users: { this.state.activeUsers }</h1>
+            </div>
+            );
+        }
+        };
+        ```
+### [Day 21](#day-21)
+    
+- August 28, 2018 - My Father's Birthday! I'm currently Learning Event Listeners in React. First on the plate is this activity: [React: Add Event Listeners](https://learn.freecodecamp.org/front-end-libraries/react/add-event-listeners) on this activity, the objective here is anytime we press the `Enter` key, a text will display on the UI saying: *"You pressed the enter key!"*. So to do that, we have an initial Component setup on the screen. 2 functions were already added which are `handleKeyPress()` and `handleEnter()`. These two functions actually works the same way. `handleKeyPress()`re-runs `handleEnter()`. We also have two lifecycles in there: `componentDidMount()` and `componentWillUnmount()`. Once `componentDidMount()` was called, an event listener needs to be installed on the UI and then that will listen on the keystrokes on keyboard. As soon as the **Enter** key is pressed, `componentWillUnmount()` will be called. And that lifecycle aims to remove the even listener. So to better understand, here is my working solution for the problem:
     ```
     class MyComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-        activeUsers: null
+        message: ''
         };
+        this.handleEnter = this.handleEnter.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
     }
+    // change code below this line
     componentDidMount() {
-        setTimeout( () => {
+        document.addEventListener('keydown', this.handleEnter.message);
+        document.addEventListener('keydown', this.handleKeyPress);
+    }
+    componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleEnter.message);
+        document.removeEventListener('keydown', this.handleKeyPress);
+    }
+    // change code above this line
+    handleEnter() {
         this.setState({
-            activeUsers: 1273
+        message: this.state.message + 'You pressed the enter key! '
         });
-        }, 2500);
+    }
+    handleKeyPress(event) {
+        if (event.keyCode === 13) {
+        this.handleEnter();
+        }
     }
     render() {
         return (
         <div>
-            <h1>Active Users: { this.state.activeUsers }</h1>
+            <h1>{this.state.message}</h1>
         </div>
         );
     }
     };
     ```
-### [Day 21](#day-21)
-    
-    - August 28, 2018 - My Father's Birthday! I'm currently Learning Event Listeners in React.
-    
-    
