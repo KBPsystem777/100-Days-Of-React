@@ -779,3 +779,49 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         }
         };
         ```
+    * [Optimize Re-Renders with shouldComponentUpdate](https://learn.freecodecamp.org/front-end-libraries/react/optimize-re-renders-with-shouldcomponentupdate) - This exercise is very interesting, in fact I poured a couple of hours to figure this out. Just a heads up, you should go back to basic JavaScript. we need the [Modulo Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()) here, an explanation is covered on this [post](https://stackoverflow.com/a/6211660/7478732). It was explained on the post how to identify a number if it's an odd or even using the Modulo operator. Basically the exercise, want to display *even* numbers only on the UI everytime the button is clicked twice. Here is my successful solution:
+        ```
+        class OnlyEvens extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+        shouldComponentUpdate(nextProps, nextState) {
+            console.log('Should I update?');
+            // change code below this line
+                return nextProps.value % 2 == 0;
+            // change code above this line
+        }
+        componentWillReceiveProps(nextProps) {
+            console.log('Receiving new props...');
+        }
+        componentDidUpdate() {
+            console.log('Component re-rendered.');
+        }
+        render() {
+            return <h1>{this.props.value}</h1>
+        }
+        };
+
+        class Controller extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            value: 0
+            };
+            this.addValue = this.addValue.bind(this);
+        }
+        addValue() {
+            this.setState({
+            value: this.state.value + 1
+            });
+        }
+        render() {
+            return (
+            <div>
+                <button onClick={this.addValue}>Add</button>
+                <OnlyEvens value={this.state.value}/>
+            </div>
+            );
+        }
+        };
+        ```
