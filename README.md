@@ -730,3 +730,52 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
     }
     };
     ```
+### [Day 22](#day-22)
+
+- August 29, 2018 - Fun to learn the following activities:
+    * [Manage Updates with Lifecycle Method](https://learn.freecodecamp.org/front-end-libraries/react/manage-updates-with-lifecycle-methods) - This activiy, introduces `componentWillReceiveProps()` and `componentDidUpdate()` lifecycles. This is my solution for the activity:
+        ```
+            class Dialog extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+        componentWillUpdate() {
+            console.log('Component is about to update...');
+        }
+        // change code below this line
+        componentWillReceiveProps(nextProps) {
+            console.log(this.props.nextProps);
+        }
+
+        componentDidUpdate() {
+            console.log('Component has updated!');
+        }
+        // change code above this line
+        render() {
+            return <h1>{this.props.message}</h1>
+        }
+        };
+
+        class Controller extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            message: 'First Message'
+            };
+            this.changeMessage = this.changeMessage.bind(this);
+        }
+        changeMessage() {
+            this.setState({
+            message: 'Second Msesage'
+            });
+        }
+        render() {
+            return (
+            <div>
+                <button onClick={this.changeMessage}>Update</button>
+                <Dialog message={this.state.message}/>
+            </div>
+            );
+        }
+        };
+        ```
