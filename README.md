@@ -830,3 +830,24 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 
 - August 30, 2018 - Styling a component in React. This is an easy activity. Actually in styling a component, you have options like in-line styling and the traditional way of styling an element using `id` and `className`. I answered the following exercises:
     * [React: Introducing Inline Styles](https://learn.freecodecamp.org/front-end-libraries/react/introducing-inline-styles)
+    * [Add Inline Styles in React](https://learn.freecodecamp.org/front-end-libraries/react/add-inline-styles-in-react) - Learn how to create a JavaScript object that contains css styling and assign that to a component. Example object:
+        ```
+        const styles = {
+        color: "purple",
+        fontSize: 40,
+        border: "2px solid purple"
+        }
+        ```
+        Assigning the `styles` object to a component:
+        ```
+        class Colorful extends React.Component {
+        render() {
+            // change code below this line
+            return (
+            <div style={ styles }>Style Me!</div>
+            );
+            // change code above this line
+        }
+        };
+        ```
+
