@@ -828,4 +828,5 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 
 ### [Day 23](#day-23)
 
-- August 30, 2018 - 
+- August 30, 2018 - Styling a component in React. This is an easy activity. Actually in styling a component, you have options like in-line styling and the traditional way of styling an element using `id` and `className`. I answered the following exercises:
+    * [React: Introducing Inline Styles](https://learn.freecodecamp.org/front-end-libraries/react/introducing-inline-styles)
