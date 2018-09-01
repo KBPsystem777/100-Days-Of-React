@@ -851,3 +851,6 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         };
         ```
 
+### [Day 24](#day-24)
+
+- September 1, 2018 - Christmas is coming!
