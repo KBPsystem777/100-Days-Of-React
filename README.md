@@ -933,3 +933,51 @@ Here is my working solution for the problem:
     };
     ```
     **Review**: [Math.Floor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and [Math.Random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+### [Day 25](#day-25)
+
+- September 5, 2018. *"One hour coding per weekdays is better the coding 8 hours on Saturdays"* - Alex Kallaway. Yup that's from him! I listened to his podcast yesterday about building consistency on your habits, and I was really amazed. So today I practiced it and make sure I alot 1hr before I start my very fascinating work :P
+
+    Now I am working on this problem: [React: Render with an If/Else Condition](https://learn.freecodecamp.org/front-end-libraries/react/render-with-an-ifelse-condition) So as always, there is a predefined components already on the screen. The task is to create a condition script that if the statement is true, then display this component `X` on the UI. And if it's false, display component `Y`.
+
+    Coming from pure JavaScript perspective, I know how to implement `If/Else Condition` but I am not quite sure how to bring it up to React. I know it's pretty same but the difference is we are going to display components based on the condition not running a certain task, unlike pure JavaScript. So for starters, I went to official React documentation: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html) and this [CodePen](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011) script helped me reinforce the idea. So here is my working piece of code for the problem:
+
+    ```
+    class MyComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        display: true
+        }
+        this.toggleDisplay = this.toggleDisplay.bind(this);
+    }
+    toggleDisplay() {
+        console.log('displaying wrong....')
+        this.setState({
+        display: !this.state.display
+        });
+    }
+    render() {
+        // change code below this line
+        let initialState = this.state.display;
+        let falseDisplay =
+        ( 
+        <div>
+            <button>This is False</button>
+        </div>
+        );
+        
+        if(initialState == true) {
+        console.log('this is true')
+        } else {
+        return falseDisplay
+        }
+        return (
+        <div>
+            <button onClick={this.toggleDisplay}>Toggle Display</button>
+            <h1>Displayed!</h1>
+        </div>
+        );
+    }
+    };
+    ```
