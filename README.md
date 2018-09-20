@@ -981,3 +981,7 @@ Here is my working solution for the problem:
     }
     };
     ```
+    
+### [Day 26](#day-26)
+
+- Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. 
