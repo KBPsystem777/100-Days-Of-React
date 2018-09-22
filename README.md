@@ -735,7 +735,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 29, 2018 - Fun to learn the following activities:
     * [Manage Updates with Lifecycle Method](https://learn.freecodecamp.org/front-end-libraries/react/manage-updates-with-lifecycle-methods) - This activiy, introduces `componentWillReceiveProps()` and `componentDidUpdate()` lifecycles. This is my solution for the activity:
         ```
-            class Dialog extends React.Component {
+        class Dialog extends React.Component {
         constructor(props) {
             super(props);
         }
@@ -984,4 +984,42 @@ Here is my working solution for the problem:
     
 ### [Day 26](#day-26)
 
-- Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. 
+- September 23, 2018 - Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. Alright so Im gonna continue where I left off. I've been stucked on this beautiful exercise: [React: Use && for a More Concise Conditional](https://learn.freecodecamp.org/front-end-libraries/react/use--for-a-more-concise-conditional). It is a continuation of the [previous exercise](#day-25) but this time, you will need to use the Logical `AND` operator. It's pretty the same, you'll need to display a `div` and `button` when the `this.state.display` is equals to `false`. This documentation from Offical page is very healthy for this problem: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical-ampamp-operator). This is my working code for the exercise:
+
+```
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: true
+    }
+    this.toggleDisplay = this.toggleDisplay.bind(this);
+  }
+  toggleDisplay() {
+    this.setState({
+      display: !this.state.display
+    });
+  }
+  render() {
+    // change code below this 
+    const ThisIsFalse = (
+      <div>
+        <button>Button</button>
+      </div>
+    )
+      
+      if(this.state.display == true && this.toggleDisplay) {
+        console.log('this is true')
+      } else {
+        return ThisIsFalse
+      }
+
+    return (
+       <div>
+         <button onClick={this.toggleDisplay}>Toggle Display</button>
+         <h1>Displayed!</h1>
+       </div>
+    );
+  }
+};
+```
