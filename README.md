@@ -1036,4 +1036,4 @@ class MyComponent extends React.Component {
 
 
 
-##### *[MIT LICENSE](\LICENSE)*
+##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
