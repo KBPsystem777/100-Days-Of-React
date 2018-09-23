@@ -1023,3 +1023,17 @@ class MyComponent extends React.Component {
   }
 };
 ```
+
+### [Day 27](#day-27)
+
+- September 24, 2018 - Hello! I am ready now for a new React activity. I am still on the conditional rendering. Conditional rendering is very important as explained on this activity: [Use a Ternary Expression for Conditional Rendering](https://learn.freecodecamp.org/front-end-libraries/react/use-a-ternary-expression-for-conditional-rendering). It says, before you use some fancy packages/modules with regards to rendering, this native way of rendering is a must!. Here is the TODO on this activity, from FCC:
+
+> > > *The code editor has three constants defined within the CheckUserAge component's render() method. They are called buttonOne, buttonTwo, and buttonThree. Each of these is assigned a simple JSX expression representing a button element. First, initialize the state of CheckUserAge with input and userAge both set to values of an empty string.*
+
+
+
+
+
+
+
+> ##### *[MIT LICENSE](\LICENSE)*
