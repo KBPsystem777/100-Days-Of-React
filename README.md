@@ -1026,13 +1026,12 @@ class MyComponent extends React.Component {
 
 ### [Day 27](#day-27)
 
-- September 24, 2018 - Hello! I am ready now for a new React activity. I am still on the conditional rendering. Conditional rendering is very important as explained on this activity: [Use a Ternary Expression for Conditional Rendering](https://learn.freecodecamp.org/front-end-libraries/react/use-a-ternary-expression-for-conditional-rendering). It says, before you use some fancy packages/modules with regards to rendering, this native way of rendering is a must!. Here is the TODO on this activity, from FCC:
+- September 24-25, 2018 - Hello! I am ready now for a new React activity. I am still on the conditional rendering. Conditional rendering is very important as explained on this activity: [Use a Ternary Expression for Conditional Rendering](https://learn.freecodecamp.org/front-end-libraries/react/use-a-ternary-expression-for-conditional-rendering). It says, before you use some fancy packages/modules with regards to rendering, this native way of rendering is a must!. Here is the TODO on this activity, from FCC:
 
 > *The code editor has three constants defined within the CheckUserAge component's render() method. They are called buttonOne, buttonTwo, and buttonThree. Each of these is assigned a simple JSX expression representing a button element. First, initialize the state of CheckUserAge with input and userAge both set to values of an empty string.*
 
 
-
-
+- Aside from this activity, I was also busy in making a fun app I called it **[Realtime-Weather](https://github.com/KBPsystem777/realtime-weather)**, basically, my objective was to create an interactive dahsboard like this from MSN: [https://www.msn.com/en-us/weather ](https://www.msn.com/en-us/weather) well, I know I need to use Socket.IO for realtime data fetch. Right now, I am still working on the initial UI. Not that much, I need to finish first the GET feature using Axios - the HTTP based data fetch module. I have that setup a bit but still having problem on how to display the fetched data from the API. By the way for the weather data, I am getting it from [DarkSky API](https://darksky.net/dev). Shoutout to all the peeps out there!
 
 
 
