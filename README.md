@@ -580,7 +580,7 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
 - August 3, 2018. I am currently doing the [Pass a Callback as Props](https://learn.freecodecamp.org/front-end-libraries/react/pass-a-callback-as-props) and I am actually clueless on what's going on here. Basically, this challenge is just a continuation of the previous one, and almost identical with the last 2-3 exercises.
 Okay, so there is a parent component, whic is ths `MyApp` and it has two child components namely `GetInput` which is responsible in rendering the input element on the UI as well as an `h3` element. Another one is the `RenderInput` component which is responsible in displaying the user input from the `GetInput` component. `GetInput` should be handling all the changes on the Input element and pass those data on the `MyApp` component. Here is my solution for this:
 
-    ```
+    ```javascript
     class MyApp extends React.Component {
     constructor(props) {
         super(props);
@@ -664,7 +664,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 22, 2018. Back to back in React. And solved the following exercises:
     * [Use the Lifecycle Method componentDidMount](https://learn.freecodecamp.org/front-end-libraries/react/use-the-lifecycle-method-componentdidmount) - On this activity, the explanations are pretty clear and main objective here is that you are calling an API endpoint that contains the data which is the total numbers of `activeUsers`. So, the plan is that on the front end, once `MyComponent` was render into the DOM, you should be able to display on the UI how many users are active right now, based on the data stored on `activeUsers` API, after 2.5 seconds. Looks tough huh? Well not really, here is my working code:
 
-        ```
+        ```javascript
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -691,7 +691,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 ### [Day 21](#day-21)
     
 - August 28, 2018 - My Father's Birthday! I'm currently Learning Event Listeners in React. First on the plate is this activity: [React: Add Event Listeners](https://learn.freecodecamp.org/front-end-libraries/react/add-event-listeners) on this activity, the objective here is anytime we press the `Enter` key, a text will display on the UI saying: *"You pressed the enter key!"*. So to do that, we have an initial Component setup on the screen. 2 functions were already added which are `handleKeyPress()` and `handleEnter()`. These two functions actually works the same way. `handleKeyPress()`re-runs `handleEnter()`. We also have two lifecycles in there: `componentDidMount()` and `componentWillUnmount()`. Once `componentDidMount()` was called, an event listener needs to be installed on the UI and then that will listen on the keystrokes on keyboard. As soon as the **Enter** key is pressed, `componentWillUnmount()` will be called. And that lifecycle aims to remove the even listener. So to better understand, here is my working solution for the problem:
-    ```
+    ```javascript
     class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -734,7 +734,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 
 - August 29, 2018 - Fun to learn the following activities:
     * [Manage Updates with Lifecycle Method](https://learn.freecodecamp.org/front-end-libraries/react/manage-updates-with-lifecycle-methods) - This activiy, introduces `componentWillReceiveProps()` and `componentDidUpdate()` lifecycles. This is my solution for the activity:
-        ```
+        ```javascript
         class Dialog extends React.Component {
         constructor(props) {
             super(props);
@@ -780,7 +780,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         };
         ```
     * [Optimize Re-Renders with shouldComponentUpdate](https://learn.freecodecamp.org/front-end-libraries/react/optimize-re-renders-with-shouldcomponentupdate) - This exercise is very interesting, in fact I poured a couple of hours to figure this out. Just a heads up, you should go back to basic JavaScript. we need the [Modulo Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()) here, an explanation is covered on this [post](https://stackoverflow.com/a/6211660/7478732). It was explained on the post how to identify a number if it's an odd or even using the Modulo operator. Basically the exercise, want to display *even* numbers only on the UI everytime the button is clicked twice. Here is my successful solution:
-        ```
+        ```javascript
         class OnlyEvens extends React.Component {
         constructor(props) {
             super(props);
@@ -831,7 +831,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 30, 2018 - Styling a component in React. This is an easy activity. Actually in styling a component, you have options like in-line styling and the traditional way of styling an element using `id` and `className`. I answered the following exercises:
     * [React: Introducing Inline Styles](https://learn.freecodecamp.org/front-end-libraries/react/introducing-inline-styles)
     * [Add Inline Styles in React](https://learn.freecodecamp.org/front-end-libraries/react/add-inline-styles-in-react) - Learn how to create a JavaScript object that contains css styling and assign that to a component. Example object:
-        ```
+        ```javascript
         const styles = {
         color: "purple",
         fontSize: 40,
@@ -839,7 +839,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         }
         ```
         Assigning the `styles` object to a component:
-        ```
+        ```javascript
         class Colorful extends React.Component {
         render() {
             // change code below this line
@@ -858,7 +858,7 @@ Basically the catch here is to change the default value of the const `answer` to
 Here is my working solution for the problem:
 
 
-    ```
+    ```javascript
     const inputStyle = {
     width: 235,
     margin: 5
@@ -942,7 +942,50 @@ Here is my working solution for the problem:
 
     Coming from pure JavaScript perspective, I know how to implement `If/Else Condition` but I am not quite sure how to bring it up to React. I know it's pretty same but the difference is we are going to display components based on the condition not running a certain task, unlike pure JavaScript. So for starters, I went to official React documentation: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html) and this [CodePen](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011) script helped me reinforce the idea. So here is my working piece of code for the problem:
 
+    ```javascript
+        class MyComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            display: true
+            }
+            this.toggleDisplay = this.toggleDisplay.bind(this);
+        }
+        toggleDisplay() {
+            console.log('displaying wrong....')
+            this.setState({
+            display: !this.state.display
+            });
+        }
+        render() {
+            // change code below this line
+            let initialState = this.state.display;
+            let falseDisplay =
+            ( 
+            <div>
+                <button>This is False</button>
+            </div>
+            );
+            if(initialState == true) {
+            console.log('this is true')
+            } else {
+            return falseDisplay
+            }
+            return (
+            <div>
+                <button onClick={this.toggleDisplay}>Toggle Display</button>
+                <h1>Displayed!</h1>
+            </div>
+            );
+        }
+        };
     ```
+    
+### [Day 26](#day-26)
+
+- September 23, 2018 - Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. Alright so Im gonna continue where I left off. I've been stucked on this beautiful exercise: [React: Use && for a More Concise Conditional](https://learn.freecodecamp.org/front-end-libraries/react/use--for-a-more-concise-conditional). It is a continuation of the [previous exercise](#day-25) but this time, you will need to use the Logical `AND` operator. It's pretty the same, you'll need to display a `div` and `button` when the `this.state.display` is equals to `false`. This documentation from Offical page is very healthy for this problem: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical-ampamp-operator). This is my working code for the exercise:
+
+    ```javascript
     class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -952,26 +995,23 @@ Here is my working solution for the problem:
         this.toggleDisplay = this.toggleDisplay.bind(this);
     }
     toggleDisplay() {
-        console.log('displaying wrong....')
         this.setState({
         display: !this.state.display
         });
     }
     render() {
-        // change code below this line
-        let initialState = this.state.display;
-        let falseDisplay =
-        ( 
+        // change code below this 
+        const ThisIsFalse = (
         <div>
-            <button>This is False</button>
+            <button>Button</button>
         </div>
-        );
-        
-        if(initialState == true) {
-        console.log('this is true')
+        )
+        if(this.state.display == true && this.toggleDisplay) {
+            console.log('this is true')
         } else {
-        return falseDisplay
+            return ThisIsFalse
         }
+
         return (
         <div>
             <button onClick={this.toggleDisplay}>Toggle Display</button>
@@ -981,48 +1021,6 @@ Here is my working solution for the problem:
     }
     };
     ```
-    
-### [Day 26](#day-26)
-
-- September 23, 2018 - Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. Alright so Im gonna continue where I left off. I've been stucked on this beautiful exercise: [React: Use && for a More Concise Conditional](https://learn.freecodecamp.org/front-end-libraries/react/use--for-a-more-concise-conditional). It is a continuation of the [previous exercise](#day-25) but this time, you will need to use the Logical `AND` operator. It's pretty the same, you'll need to display a `div` and `button` when the `this.state.display` is equals to `false`. This documentation from Offical page is very healthy for this problem: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical-ampamp-operator). This is my working code for the exercise:
-
-```
-class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      display: true
-    }
-    this.toggleDisplay = this.toggleDisplay.bind(this);
-  }
-  toggleDisplay() {
-    this.setState({
-      display: !this.state.display
-    });
-  }
-  render() {
-    // change code below this 
-    const ThisIsFalse = (
-      <div>
-        <button>Button</button>
-      </div>
-    )
-      
-      if(this.state.display == true && this.toggleDisplay) {
-        console.log('this is true')
-      } else {
-        return ThisIsFalse
-      }
-
-    return (
-       <div>
-         <button onClick={this.toggleDisplay}>Toggle Display</button>
-         <h1>Displayed!</h1>
-       </div>
-    );
-  }
-};
-```
 
 ### [Day 27](#day-27)
 
@@ -1030,8 +1028,61 @@ class MyComponent extends React.Component {
 
 > *The code editor has three constants defined within the CheckUserAge component's render() method. They are called buttonOne, buttonTwo, and buttonThree. Each of these is assigned a simple JSX expression representing a button element. First, initialize the state of CheckUserAge with input and userAge both set to values of an empty string.*
 
+- It took me so long to crack this exercise to I dont wanna explain everything here. Im still on the state of shock that my code works :D This is my working solution:
 
-- Aside from this activity, I was also busy in making a fun app I called it **[Realtime-Weather](https://github.com/KBPsystem777/realtime-weather)**, basically, my objective was to create an interactive dahsboard like this from MSN: [https://www.msn.com/en-us/weather ](https://www.msn.com/en-us/weather) well, I know I need to use Socket.IO for realtime data fetch. Right now, I am still working on the initial UI. Not that much, I need to finish first the GET feature using Axios - the HTTP based data fetch module. I have that setup a bit but still having problem on how to display the fetched data from the API. By the way for the weather data, I am getting it from [DarkSky API](https://darksky.net/dev). Shoutout to all the peeps out there!
+    ```javascript
+
+    const inputStyle = {
+    width: 235,
+    margin: 5
+    }
+
+        class CheckUserAge extends React.Component {
+        constructor(props) {
+            super(props);
+            // change code below this line
+            this.state = {
+            input: '',
+            userAge: ''
+            }
+            // change code above this line
+            this.submit = this.submit.bind(this);
+            this.handleChange = this.handleChange.bind(this);
+        }
+        handleChange(e) {
+            this.setState({
+            input: e.target.value,
+            userAge: ''
+            });
+        }
+        submit() {
+            this.setState({
+            userAge: this.state.input
+            });
+        }
+        render() {
+            const buttonOne = <button onClick={this.submit}>Submit</button>;
+            const buttonTwo = <button>You May Enter</button>;
+            const buttonThree = <button>You Shall Not Pass</button>;
+            return (
+            <div>
+                <h3>Enter Your Age to Continue</h3>
+                <input
+                style={inputStyle}
+                type="number"
+                value={this.state.input}
+                onChange={this.handleChange} /><br />
+                {
+                /* change code here */
+                this.state.userAge === ''? buttonOne: (this.state.input >= 18? buttonTwo: buttonThree)
+                }
+            </div>
+            );
+        }
+        };
+    ```
+
+- Aside from this activity, I was also busy in making a fun app I called it **[Realtime-Weather](https://github.com/KBPsystem777/realtime-weather)**, basically, my objective was to create an interactive dahsboard like this from MSN: [https://www.msn.com/en-us/weather](https://www.msn.com/en-us/weather) well, I know I need to use Socket.IO for realtime data fetch. Right now, I am still working on the initial UI. Not that much, I need to finish first the GET feature using Axios - the HTTP based data fetch module. I have that setup a bit but still having problem on how to display the fetched data from the API. By the way for the weather data, I am getting it from [DarkSky API](https://darksky.net/dev). Shoutout to all the peeps out there!
 
 
 
