@@ -1084,6 +1084,55 @@ Here is my working solution for the problem:
 
 - Aside from this activity, I was also busy in making a fun app I called it **[Realtime-Weather](https://github.com/KBPsystem777/realtime-weather)**, basically, my objective was to create an interactive dahsboard like this from MSN: [https://www.msn.com/en-us/weather](https://www.msn.com/en-us/weather) well, I know I need to use Socket.IO for realtime data fetch. Right now, I am still working on the initial UI. Not that much, I need to finish first the GET feature using Axios - the HTTP based data fetch module. I have that setup a bit but still having problem on how to display the fetched data from the API. By the way for the weather data, I am getting it from [DarkSky API](https://darksky.net/dev). Shoutout to all the peeps out there!
 
+### [Day 28](#day-28)
+- September 27, 2018. Today, I finished the [Game Of Chance](https://learn.freecodecamp.org/front-end-libraries/react/render-conditionally-from-props) exercises from FCC. This exercise is still a conditional rendering activity but this time, the twist is we are displaying some components based on their `props` values. So the catch on the game is that, there is a button. Once you click the button, it will randomly tell you if you *Win* or you *Lose*. It's random. Meaning, there is no assurance that everytime you click, you will win/lose. It's based on the browser algorithm, no tricks, no skills. Specifically, `Math.random()` is your friend here. This is the code I used to passed the exercise and tests:
 
+    ``` jsx
+    class Results extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+        <h1>
+        {
+            /* change code here */
+            this.props.fiftyFifty  == 1 ? 'You Win!' : 'You Lose!'
 
+        }
+        </h1>
+        )
+    };
+    };
+
+    class GameOfChance extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        counter: 1
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        this.setState({
+        counter: this.state.counter + 1
+        
+        });
+    }
+    render() {
+        let expression = Math.random() > .5; // change code here
+        console.log(expression)
+        return (
+        <div>
+            <button onClick={this.handleClick}>Play Again</button>
+            { /* change code below this line */ }
+
+            <Results fiftyFifty={expression}/>
+            { /* change code above this line */ }
+            <p>{'Turn: ' + this.state.counter}</p>
+        </div>
+        );
+    }
+    };
+    ```
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
