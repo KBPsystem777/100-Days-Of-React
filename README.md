@@ -45,7 +45,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * I am actually overwhelmed by the facts and plenty of resources about React, either online content: videos/ebook/PDFs/blogs and so on. My advise is that stick to your current resource and dont let any material(s) distract your goals. It happens to me all the time.
 
 ### [Day 5](#day-5)
-
+ 
 - Early morning activity with these FreccCodeCamp React exercises:
 
     * [Compose React Components](https://learn.freecodecamp.org/front-end-libraries/react/compose-react-components/)
@@ -58,7 +58,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [Pass an array as props](https://learn.freecodecamp.org/front-end-libraries/react/pass-an-array-as-props)
     *Sample:*
-        ```
+        ``` jsx
         const List = (props) => {
             return <p>{props.tasks.join(', ')</p>
         }
@@ -102,7 +102,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * [Override Default Props](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props)
 
     * [Use PropTypes to Define the Props you expect](https://learn.freecodecamp.org/front-end-libraries/react/override-default-props/) - Had a hardtime on this challenge. Basically, I need to restrict the props `quantity` to be a number only type of props. So after read and search via [PropTypes NPM docs](https://www.npmjs.com/package/prop-types) I got the hint on what to do. My passing code:
-        ```
+        ``` jsx
         const Items = (props) => {
         return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
         };
@@ -128,7 +128,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         ```
     * [Access Props using this.props](https://learn.freecodecamp.org/front-end-libraries/react/access-props-using-this-props) - This activity is kinda actually the same with what I did on Day 1. Here is my complete solution for the problem:
 
-        ```
+        ``` jsx
         class ReturnTempPassword extends React.Component {
         constructor(props) {
             super(props);
@@ -170,7 +170,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 - Rainy morning here @CyberGate2, still awake and answering this React exercise before going home:
     * [Review Using props with Stateless Functional Component](https://learn.freecodecamp.org/front-end-libraries/react/review-using-props-with-stateless-functional-components) - Finally in here I learned how to validate props or assign a property to props in here I was tasked to restrict the props to be `string` only. And then assign a default `prop` value. Here's my solution:
 
-        ```
+        ``` jsx
         class Camper extends React.Component {
         constructor(props) {
             super(props);
@@ -215,7 +215,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * [Creating Stateful Components](https://learn.freecodecamp.org/front-end-libraries/react/create-a-stateful-component/).
         My Solution:
 
-        ```
+        ``` jsx
         class StatefulComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -235,7 +235,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
         };
         ```
     * [Render State in the User Interface](https://learn.freecodecamp.org/front-end-libraries/react/render-state-in-the-user-interface) - One thing I learned here is that `state` state is responsible in tracking your data changes in your app and then renders those change on the UI. When state data updates, it triggers a re-render of UI in all components up to child level that is using the same data as prop. Here is my solution for the activity:
-        ```
+        ``` jsx
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -262,7 +262,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     
     * [Render State in the User Interface Another Way](https://learn.freecodecamp.org/front-end-libraries/react/render-state-in-the-user-interface-another-way) - Teaches an idea on how to access React `state` using pure JavaScript. My Solution:
 
-        ```
+        ``` jsx
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -290,7 +290,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 - I'm back home after almost 7 hours of driving. [Pacquiao won again today!](http://www.espn.com/boxing/story/_/id/24100683/manny-pacquiao-ko-lucas-matthysse-7th-round-claim-wba-welterweight-title) Still working on my React skills/ here's what I'm working on today:
     * [Set State with this.setState](https://learn.freecodecamp.org/front-end-libraries/react/set-state-with-this-setstate) - On this activity, you'll understand how your app will display real time results when somthing changed on the data, like for example you what to display something on the UI after a button has been clicked. You may consult React Docs [here](https://reactjs.org/docs/state-and-lifecycle.html). Example from the activity:
 
-        ```
+        ``` jsx
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -327,75 +327,75 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * [Bind 'this' to a Class Method](https://learn.freecodecamp.org/front-end-libraries/react/bind-this-to-a-class-method) - The exercise is actually re-introducing me to *React Events handling*. I said re-introduction because I've done it before on some of my projects but the problem is that I didn't understand it. 
     So here is my solution to the problem.
         ```
-        class MyComponent extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-            itemCount: 0
-            };
-            // change code below this line
-            this.addItem = this.addItem.bind(this);
-            // change code above this line
-        }
-        addItem() {
-            this.setState({
-            itemCount: this.state.itemCount + 1
-            });
-        }
-        render() {
-            return (
-            <div>
-                { /* change code below this line */ }
-                <button onClick={ this.addItem }>Click Me</button>
-                { /* change code above this line */ }
-                <h1>Current Item Count: {this.state.itemCount}</h1>
-            </div>
-            );
-        }
-        };
-        ```
-
-### [Day 14](#day-14)
-
-- July 27, 2018 - I'm back to React. I am still as work right now. It's 4:16am and I am studying this activity from FreeCodeCamp. 
-    - [React: Use State to Toggle an Element](https://learn.freecodecamp.org/front-end-libraries/react/use-state-to-toggle-an-element). The main objective on this activity is that there is a `<button>` and this button should show something on the screen after I clicked it. And once I clicked it again, that text display on my screen should be gone, and vice versa. So i short, a pop up text will come and go after I click the button. Like ON-OFF-ON-OFF...
-    My solution:
-        ```
-        class MyComponent extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-            visibility: false
-            };
-            // change code below this line
-            this.toggleVisibility = this.toggleVisibility.bind(this);
-
-            // change code above this line
-        }
-        // change code below this line
-        toggleVisibility(){
-            this.setState({
-            visibility: !this.state.visibility
-            });
-        };
-        // change code above this line
-        render() {
-            if (this.state.visibility) {
-            return (
-                <div>
-                <button onClick={this.toggleVisibility}>Click Me</button>
-                <h1>Now you see me!</h1>
-                </div>
-            );
-            } else {
-            return (
-                <div>
-                <button onClick={this.toggleVisibility}>Click Me</button>
-                </div>
-            );
+            class MyComponent extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                itemCount: 0
+                };
+                // change code below this line
+                this.addItem = this.addItem.bind(this);
+                // change code above this line
             }
-        }
-        };
+            addItem() {
+                this.setState({
+                itemCount: this.state.itemCount + 1
+                });
+            }
+            render() {
+                return (
+                <div>
+                    { /* change code below this line */ }
+                    <button onClick={ this.addItem }>Click Me</button>
+                    { /* change code above this line */ }
+                    <h1>Current Item Count: {this.state.itemCount}</h1>
+                </div>
+                );
+            }
+            };
+            ```
+
+    ### [Day 14](#day-14)
+
+    - July 27, 2018 - I'm back to React. I am still as work right now. It's 4:16am and I am studying this activity from FreeCodeCamp. 
+        - [React: Use State to Toggle an Element](https://learn.freecodecamp.org/front-end-libraries/react/use-state-to-toggle-an-element). The main objective on this activity is that there is a `<button>` and this button should show something on the screen after I clicked it. And once I clicked it again, that text display on my screen should be gone, and vice versa. So i short, a pop up text will come and go after I click the button. Like ON-OFF-ON-OFF...
+        My solution:
+            ``` jsx
+            class MyComponent extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = {
+                    visibility: false
+                    };
+                // change code below this line
+                this.toggleVisibility = this.toggleVisibility.bind(this);
+
+                // change code above this line
+                }
+                 // change code below this line
+                toggleVisibility(){
+                    this.setState({
+                    visibility: !this.state.visibility
+                    });
+                };
+                // change code above this line
+                render() {
+                    if (this.state.visibility) {
+                    return (
+                        <div>
+                        <button onClick={this.toggleVisibility}>Click Me</button>
+                        <h1>Now you see me!</h1>
+                        </div>
+                    );
+                    } else {
+                    return (
+                        <div>
+                        <button onClick={this.toggleVisibility}>Click Me</button>
+                        </div>
+                    );
+                    }
+                }
+                };
         ```
  - I got the chance to watch this video: [React State and Class](https://www.youtube.com/watch?v=RTAxNwa0KzY) so that I can refresh my memory about States for the past days that I havent touched React. Also this weekend, I am planning to go through these React tutorials playlist: [React Tutorial 2017](https://www.youtube.com/playlist?list=PLkEZWD8wbltnXlfyhS5qSMTNb26utkOkI) by Ihatetomatoes
 
@@ -405,7 +405,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
     * *Reset*: Total Reset. Rolls-back the counter value to 0
     > I experienced some bugs on this exercise which I appended on the issue [#17545](https://github.com/freeCodeCamp/freeCodeCamp/issues/17545#issuecomment-408548253)
 
-    ```
+    ``` jsx
     class Counter extends React.Component {
     constructor(props) {
         super(props);
@@ -456,7 +456,7 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 - July 31, 2018. By the way I created a Messaging app yesterday for our start up group. You may check out [this](https://github.com/KBPsystem777/Chat-Application). Alrigh that project is a `work-in-progress` app, and I am hoping to finish it as fast as possible. Early morning today, I am hacking this FCC exercise: [Create a Controlled Input](https://learn.freecodecamp.org/front-end-libraries/react/create-a-controlled-input).
 This challenge is preparing you for the future! It actually introduces you how React works in forms and input elements in html. The objective of the challenge is you type something on the `input` field and you should instruct React to display what was type on the input area. Here is my working solution for the challenge:
 
-    ```
+    ``` jsx
     class ControlledInput extends React.Component {
     constructor(props) {
         super(props);
@@ -499,7 +499,7 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
 `handleChange` => keeps track of the user input on the input field.
 `handleSubmit` => gets the value of the input element and pass it on the h1 tag as soon as the submit button was fired up. Here is my solution for the challenge:
 
-    ```
+    ``` jsx
     class MyForm extends React.Component {
     constructor(props) {
         super(props);
@@ -545,7 +545,7 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
 ### [Day 17](#day-17)
 - August 2, 2018. The activity for today is [Pass State as Props to Child Components](https://learn.freecodecamp.org/front-end-libraries/react/pass-state-as-props-to-child-components). This opens my mind on how React works with it's components like passing data from one component to another (parent-to-child, child-parent and sibling-siblings). On the said activity, I was task to allow the `Nav` component which is the child to access the data in the parent constructor which is the `App` component, and display it on the UI. This [Stack overflow post](https://stackoverflow.com/a/39401252/7478732) helped me in solving the problem. Here is my working solution:
 
-    ```
+    ``` jsx
     class MyApp extends React.Component {
     constructor(props) {
         super(props);
@@ -580,7 +580,7 @@ There is 2 functions created in here the `handleChange` and `handleSubmit`. Thes
 - August 3, 2018. I am currently doing the [Pass a Callback as Props](https://learn.freecodecamp.org/front-end-libraries/react/pass-a-callback-as-props) and I am actually clueless on what's going on here. Basically, this challenge is just a continuation of the previous one, and almost identical with the last 2-3 exercises.
 Okay, so there is a parent component, whic is ths `MyApp` and it has two child components namely `GetInput` which is responsible in rendering the input element on the UI as well as an `h3` element. Another one is the `RenderInput` component which is responsible in displaying the user input from the `GetInput` component. `GetInput` should be handling all the changes on the Input element and pass those data on the `MyApp` component. Here is my solution for this:
 
-    ```javascript
+    ``` jsx
     class MyApp extends React.Component {
     constructor(props) {
         super(props);
@@ -664,7 +664,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 22, 2018. Back to back in React. And solved the following exercises:
     * [Use the Lifecycle Method componentDidMount](https://learn.freecodecamp.org/front-end-libraries/react/use-the-lifecycle-method-componentdidmount) - On this activity, the explanations are pretty clear and main objective here is that you are calling an API endpoint that contains the data which is the total numbers of `activeUsers`. So, the plan is that on the front end, once `MyComponent` was render into the DOM, you should be able to display on the UI how many users are active right now, based on the data stored on `activeUsers` API, after 2.5 seconds. Looks tough huh? Well not really, here is my working code:
 
-        ```javascript
+        ``` jsx
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -691,7 +691,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 ### [Day 21](#day-21)
     
 - August 28, 2018 - My Father's Birthday! I'm currently Learning Event Listeners in React. First on the plate is this activity: [React: Add Event Listeners](https://learn.freecodecamp.org/front-end-libraries/react/add-event-listeners) on this activity, the objective here is anytime we press the `Enter` key, a text will display on the UI saying: *"You pressed the enter key!"*. So to do that, we have an initial Component setup on the screen. 2 functions were already added which are `handleKeyPress()` and `handleEnter()`. These two functions actually works the same way. `handleKeyPress()`re-runs `handleEnter()`. We also have two lifecycles in there: `componentDidMount()` and `componentWillUnmount()`. Once `componentDidMount()` was called, an event listener needs to be installed on the UI and then that will listen on the keystrokes on keyboard. As soon as the **Enter** key is pressed, `componentWillUnmount()` will be called. And that lifecycle aims to remove the even listener. So to better understand, here is my working solution for the problem:
-    ```javascript
+    ``` jsx
     class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -734,7 +734,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 
 - August 29, 2018 - Fun to learn the following activities:
     * [Manage Updates with Lifecycle Method](https://learn.freecodecamp.org/front-end-libraries/react/manage-updates-with-lifecycle-methods) - This activiy, introduces `componentWillReceiveProps()` and `componentDidUpdate()` lifecycles. This is my solution for the activity:
-        ```javascript
+        ``` jsx
         class Dialog extends React.Component {
         constructor(props) {
             super(props);
@@ -780,7 +780,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         };
         ```
     * [Optimize Re-Renders with shouldComponentUpdate](https://learn.freecodecamp.org/front-end-libraries/react/optimize-re-renders-with-shouldcomponentupdate) - This exercise is very interesting, in fact I poured a couple of hours to figure this out. Just a heads up, you should go back to basic JavaScript. we need the [Modulo Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()) here, an explanation is covered on this [post](https://stackoverflow.com/a/6211660/7478732). It was explained on the post how to identify a number if it's an odd or even using the Modulo operator. Basically the exercise, want to display *even* numbers only on the UI everytime the button is clicked twice. Here is my successful solution:
-        ```javascript
+        ``` jsx
         class OnlyEvens extends React.Component {
         constructor(props) {
             super(props);
@@ -831,7 +831,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
 - August 30, 2018 - Styling a component in React. This is an easy activity. Actually in styling a component, you have options like in-line styling and the traditional way of styling an element using `id` and `className`. I answered the following exercises:
     * [React: Introducing Inline Styles](https://learn.freecodecamp.org/front-end-libraries/react/introducing-inline-styles)
     * [Add Inline Styles in React](https://learn.freecodecamp.org/front-end-libraries/react/add-inline-styles-in-react) - Learn how to create a JavaScript object that contains css styling and assign that to a component. Example object:
-        ```javascript
+        ``` jsx
         const styles = {
         color: "purple",
         fontSize: 40,
@@ -839,7 +839,7 @@ Good intro about React LifeCycle: [https://www.youtube.com/watch?v=Oioo0IdoEls](
         }
         ```
         Assigning the `styles` object to a component:
-        ```javascript
+        ``` jsx
         class Colorful extends React.Component {
         render() {
             // change code below this line
@@ -858,7 +858,7 @@ Basically the catch here is to change the default value of the const `answer` to
 Here is my working solution for the problem:
 
 
-    ```javascript
+    ``` jsx
     const inputStyle = {
     width: 235,
     margin: 5
@@ -942,7 +942,7 @@ Here is my working solution for the problem:
 
     Coming from pure JavaScript perspective, I know how to implement `If/Else Condition` but I am not quite sure how to bring it up to React. I know it's pretty same but the difference is we are going to display components based on the condition not running a certain task, unlike pure JavaScript. So for starters, I went to official React documentation: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html) and this [CodePen](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011) script helped me reinforce the idea. So here is my working piece of code for the problem:
 
-    ```javascript
+    ``` jsx
         class MyComponent extends React.Component {
         constructor(props) {
             super(props);
@@ -985,7 +985,7 @@ Here is my working solution for the problem:
 
 - September 23, 2018 - Been a long time since I pushed commit on this repo! 👏 Let me think... It's 20 days ago 😅 I've been busy earlier workign with our chat application built using React and SocketIO. Seems like I'm almost there, but we'll get there finally. Alright so Im gonna continue where I left off. I've been stucked on this beautiful exercise: [React: Use && for a More Concise Conditional](https://learn.freecodecamp.org/front-end-libraries/react/use--for-a-more-concise-conditional). It is a continuation of the [previous exercise](#day-25) but this time, you will need to use the Logical `AND` operator. It's pretty the same, you'll need to display a `div` and `button` when the `this.state.display` is equals to `false`. This documentation from Offical page is very healthy for this problem: [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical-ampamp-operator). This is my working code for the exercise:
 
-    ```javascript
+    ``` jsx
     class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -1030,7 +1030,7 @@ Here is my working solution for the problem:
 
 - It took me so long to crack this exercise to I dont wanna explain everything here. Im still on the state of shock that my code works :D This is my working solution:
 
-    ```javascript
+    ``` jsx
 
     const inputStyle = {
     width: 235,
