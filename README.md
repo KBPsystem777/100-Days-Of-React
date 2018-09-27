@@ -1135,4 +1135,50 @@ Here is my working solution for the problem:
     }
     };
     ```
+
+- I am very very blessed enough that I got the chance to complete another activity this day. So I got his one: [Change Inline CSS Conditionally Based on Component State](https://learn.freecodecamp.org/front-end-libraries/react/change-inline-css-conditionally-based-on-component-state). The problem is still under Conditional Rendering but this time, it is focused on styling. Life for example, the current style of your button is green but as soon as you clicked it, its color will change to red. Or another example, on forms there are sometimes you are required to enter only a specific of number of characters on the input field, let's say username. Username must have 10 characters only. So if you entered more than 10 characters, the input field will turn into red, or something will get your attention on the UI part. Got it? so here is my sample code, and this is the same code I used to pass the problem:
+
+    ``` jsx
+        class GateKeeper extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+            input: ''
+            };
+            this.handleChange = this.handleChange.bind(this);
+        }
+        handleChange(event) {
+            this.setState({ input: event.target.value })
+        }
+        render() {
+            let inputStyle = {
+            border: '1px solid black'
+            };
+            // change code below this line
+            let exceededChar = {
+            border: '3px solid red'
+            }
+
+            let limit = 15;
+            let inputValue = this.state.input;
+
+            if(inputValue.length > 15) {
+            inputStyle={
+                border: '3px solid red'
+            }
+            }   
+            // change code above this line
+            return (
+            <div>
+                <h3>Don't Type Too Much:</h3>
+                <input
+                type="text"
+                style={inputStyle}
+                value={this.state.input}
+                onChange={this.handleChange} />
+            </div>
+            );
+        }
+        };
+    ```
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
