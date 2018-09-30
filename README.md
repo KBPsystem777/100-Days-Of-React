@@ -1183,10 +1183,6 @@ Here is my working solution for the problem:
     ```
 
 ### [Day 29](#day-29)
-- September 28, 2018
-
-
-
-
+- September 30, 2018 - Solving the [Use Array.map() to Dynamically Render Elements](https://learn.freecodecamp.org/front-end-libraries/react/use-array-map-to-dynamically-render-elements/).
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
