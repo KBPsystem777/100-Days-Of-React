@@ -1237,5 +1237,35 @@ Here is my working solution for the problem:
     }
     };
     ```
+### [Day 30](#day-30)
+
+- October 1, 2018 - Time flies so fast! So today, I worked with the continuation of the yesterday's activity at FCC's React Framework exercises. The work here is to still display the contents of `frontEndFrameworks` array use the `map` method and then use a key to each array elements. Here is my working code:
+
+    ``` jsx
+
+        const frontEndFrameworks = [
+        'React',
+        'Angular',
+        'Ember',
+        'Knockout',
+        'Backbone',
+        'Vue'
+        ];
+
+        function Frameworks() {
+        const renderFrameworks = frontEndFrameworks.map((x) => <li key={x}>{x}</li>) // change code here
+        return (
+            <div>
+            <h1>Popular Front End JavaScript Frameworks</h1>
+            <ul>
+                {renderFrameworks}
+            </ul>
+            </div>
+        );
+        };
+    ```
+
+
+
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
