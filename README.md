@@ -1183,6 +1183,59 @@ Here is my working solution for the problem:
     ```
 
 ### [Day 29](#day-29)
-- September 30, 2018 - Solving the [Use Array.map() to Dynamically Render Elements](https://learn.freecodecamp.org/front-end-libraries/react/use-array-map-to-dynamically-render-elements/).
+- September 30, 2018 - At work now and solving the [Use Array.map() to Dynamically Render Elements](https://learn.freecodecamp.org/front-end-libraries/react/use-array-map-to-dynamically-render-elements/). This is about decoding a To-Do-List so I think another puppy died today. Here's the official instructions from FCC:
+
+> Inside the constructor, create a this.state object and define two states: userInput should be initialized as an empty string, and toDoList should be initialized as an empty array. Next, delete the comment in the render() method next to the items variable. In its place, map over the toDoList array stored in the component's internal state and dynamically render a li for each item. Try entering the string eat, code, sleep, repeat into the textarea, then click the button and see what happens.
+
+- Here is my code in completing this:
+
+    ```jsx
+    const textAreaStyles = {
+    width: 235,
+    margin: 5
+    };
+
+    class MyToDoList extends React.Component {
+    constructor(props) {
+        super(props);
+        // change code below this line
+        this.state = {
+        userInput: '',
+        toDoList: []
+        }
+        // change code above this line
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleSubmit() {
+        const itemsArray = this.state.userInput.split(',');
+        this.setState({
+        toDoList: itemsArray
+        });
+    }
+    handleChange(e) {
+        this.setState({
+        userInput: e.target.value
+        });
+    }
+    render() {
+        const items = this.state.toDoList.map((x) => <li>{x}</li>); // change code here
+        return (
+        <div>
+            <textarea
+            onChange={this.handleChange}
+            value={this.state.userInput}
+            style={textAreaStyles}
+            placeholder="Separate Items With Commas" /><br />
+            <button onClick={this.handleSubmit}>Create List</button>
+            <h1>My "To Do" List:</h1>
+            <ul>
+            {items}
+            </ul>
+        </div>
+        );
+    }
+    };
+    ```
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
