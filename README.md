@@ -1253,7 +1253,9 @@ Here is my working solution for the problem:
         ];
 
         function Frameworks() {
-        const renderFrameworks = frontEndFrameworks.map((x) => <li key={x}>{x}</li>) // change code here
+        const renderFrameworks = frontEndFrameworks.map((x) => (
+            <li key={x}>{x}</li>
+        ))
         return (
             <div>
             <h1>Popular Front End JavaScript Frameworks</h1>
