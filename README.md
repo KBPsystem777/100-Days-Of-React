@@ -1271,58 +1271,59 @@ Here is my working solution for the problem:
 - October 2, 2018 - Solving this awesome problem: [Use Array.filter() to Dynamically Filter an Array](https://learn.freecodecamp.org/front-end-libraries/react/use-array-filter-to-dynamically-filter-an-array). Instructions:
 > In the code editor, MyComponent's state is initialized with an array of users. Some users are online and some aren't. Filter the array so you see only the users who are online. To do this, first use filter to return a new array containing only the users whose online property is true. Then, in the renderOnline variable, map over the filtered array, and return a li element for each user that contains the text of their username. Be sure to include a unique key as well, like in the last challenges.
 
-- My code so far:
+- Here is my code to finish the problem:
 
     ```jsx
-    class MyComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        users: [
-            {
-            username: 'Jeff',
-            online: true
-            },
-            {
-            username: 'Alan',
-            online: false
-            },
-            {
-            username: 'Mary',
-            online: true
-            },
-            {
-            username: 'Jim',
-            online: false
-            },
-            {
-            username: 'Sara',
-            online: true
-            },
-            {
-            username: 'Laura',
-            online: true
+        class MyComponent extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = {
+                    users: [
+                        {
+                            username: 'Jeff',
+                            online: true
+                        },
+                        {
+                            username: 'Alan',
+                            online: false
+                        },
+                        {
+                            username: Mary,
+                            online: true
+                        },
+                        {
+                            username: 'Jim',
+                            online: false
+                        },
+                        {
+                            username: 'Sara',
+                            online: true
+                        },
+                        {
+                            username: 'Laura',
+                            online: true
+                        }
+
+                    ]
+                }
             }
-        ]
+            render() {
+                //Change Code here
+                const usersOnline = this.state.users.filter((user) => user.online);
+                const renderOnline = usersOnline.map(x => 
+                    <li key={x.username}>{x.username}</li>
+                );
+                return(
+                    <div>
+                        <h1>Current Online Users:</h1>
+                        <ul>
+                            {renderOnline}
+                        </ul>
+                    </div>
+                )
+            }
         }
-    }
-    render() {
-        const usersOnline = this.state.users.filter((users) => users.online === true) ; 
-        console.log(usersOnline);
-        // change code here
-        const renderOnline = usersOnline.map((x) => (
-        <li key={x}>{x}</li>
-        )) ; // change code here
-        return (
-        <div>
-            <h1>Current Online Users:</h1>
-            <ul>
-            {renderOnline}
-            </ul>
-        </div>
-        );
-    }
-    };
+    
     ```
 
 
