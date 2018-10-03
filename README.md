@@ -1325,6 +1325,9 @@ Here is my working solution for the problem:
         }
     
     ```
+### [Day 32](#day-32)
+- October 3, 2018 - Finally finished the FCC ReactJS curriculum! I am so happy. So for the final exercise, I was introduced to a `ReactDOMServer`. This API was first introduced at [React v16.0.0](https://github.com/facebook/react/releases/tag/v16.0.0) Here is a quick note for the SSR API:
+> Core team member [Sasha Aickin wrote a great article describing React 16’s SSR improvements.](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67) According to Sasha’s synthetic benchmarks, server rendering in React 16 is roughly three times faster than React 15. “When comparing against React 15 with process.env compiled out, there’s about a 2.4x improvement in Node 4, about a 3x performance improvement in Node 6, and a full 3.8x improvement in the new Node 8.4 release. And if you compare against React 15 without compilation, React 16 has a full order of magnitude gain in SSR in the latest version of Node!” (As Sasha points out, please be aware that these numbers are based on synthetic benchmarks and may not reflect real-world performance.)
 
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
