@@ -1331,6 +1331,7 @@ Here is my working solution for the problem:
 
 ### [Day 33](#day-33)
 - October 5, 2018 - TGIF! Thinking of something new to learn in React :)
+- I think I will give FCC's [Redux curriculum](https://learn.freecodecamp.org/front-end-libraries/redux)? Yeah and why not? Im going now...
 
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
