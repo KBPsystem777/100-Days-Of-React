@@ -1334,6 +1334,9 @@ Here is my working solution for the problem:
 - **October 5, 2018 - TGIF! Thinking of something new to learn in React** :)
     - I think I will give FCC's [Redux curriculum](https://learn.freecodecamp.org/front-end-libraries/redux)? Yeah and why not? Im going now...
     - On my GitHub repo, I do have some React projects and I want to finish and improve them, so this is a good start to apply what I learned.
+    - Completed the first Redux activity in FCC: [Create a Redux Store](https://learn.freecodecamp.org/front-end-libraries/redux/create-a-redux-store)
+
+    
 
 
 
