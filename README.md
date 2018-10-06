@@ -326,7 +326,8 @@ I have previously pushed bunch of React codes to our start-up repo only to found
 
     * [Bind 'this' to a Class Method](https://learn.freecodecamp.org/front-end-libraries/react/bind-this-to-a-class-method) - The exercise is actually re-introducing me to *React Events handling*. I said re-introduction because I've done it before on some of my projects but the problem is that I didn't understand it. 
     So here is my solution to the problem.
-        ```
+        ```jsx
+
             class MyComponent extends React.Component {
             constructor(props) {
                 super(props);
@@ -1330,8 +1331,10 @@ Here is my working solution for the problem:
 > Core team member [Sasha Aickin wrote a great article describing React 16’s SSR improvements.](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67) According to Sasha’s synthetic benchmarks, server rendering in React 16 is roughly three times faster than React 15. “When comparing against React 15 with process.env compiled out, there’s about a 2.4x improvement in Node 4, about a 3x performance improvement in Node 6, and a full 3.8x improvement in the new Node 8.4 release. And if you compare against React 15 without compilation, React 16 has a full order of magnitude gain in SSR in the latest version of Node!” (As Sasha points out, please be aware that these numbers are based on synthetic benchmarks and may not reflect real-world performance.)
 
 ### [Day 33](#day-33)
-- October 5, 2018 - TGIF! Thinking of something new to learn in React :)
-- I think I will give FCC's [Redux curriculum](https://learn.freecodecamp.org/front-end-libraries/redux)? Yeah and why not? Im going now...
+- **October 5, 2018 - TGIF! Thinking of something new to learn in React** :)
+    - I think I will give FCC's [Redux curriculum](https://learn.freecodecamp.org/front-end-libraries/redux)? Yeah and why not? Im going now...
+    - On my GitHub repo, I do have some React projects and I want to finish and improve them, so this is a good start to apply what I learned.
+
 
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
