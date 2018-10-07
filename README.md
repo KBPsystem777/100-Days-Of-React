@@ -1027,7 +1027,7 @@ Here is my working solution for the problem:
 
 - September 24-25, 2018 - Hello! I am ready now for a new React activity. I am still on the conditional rendering. Conditional rendering is very important as explained on this activity: [Use a Ternary Expression for Conditional Rendering](https://learn.freecodecamp.org/front-end-libraries/react/use-a-ternary-expression-for-conditional-rendering). It says, before you use some fancy packages/modules with regards to rendering, this native way of rendering is a must!. Here is the TODO on this activity, from FCC:
 
-> *The code editor has three constants defined within the CheckUserAge component's render() method. They are called buttonOne, buttonTwo, and buttonThree. Each of these is assigned a simple JSX expression representing a button element. First, initialize the state of CheckUserAge with input and userAge both set to values of an empty string.*
+    > *The code editor has three constants defined within the CheckUserAge component's render() method. They are called buttonOne, buttonTwo, and buttonThree. Each of these is assigned a simple JSX expression representing a button element. First, initialize the state of CheckUserAge with input and userAge both set to values of an empty string.*
 
 - It took me so long to crack this exercise to I dont wanna explain everything here. Im still on the state of shock that my code works :D This is my working solution:
 
@@ -1186,7 +1186,7 @@ Here is my working solution for the problem:
 ### [Day 29](#day-29)
 - September 30, 2018 - At work now and solving the [Use Array.map() to Dynamically Render Elements](https://learn.freecodecamp.org/front-end-libraries/react/use-array-map-to-dynamically-render-elements/). This is about decoding a To-Do-List so I think another puppy died today. Here's the official instructions from FCC:
 
-> Inside the constructor, create a this.state object and define two states: userInput should be initialized as an empty string, and toDoList should be initialized as an empty array. Next, delete the comment in the render() method next to the items variable. In its place, map over the toDoList array stored in the component's internal state and dynamically render a li for each item. Try entering the string eat, code, sleep, repeat into the textarea, then click the button and see what happens.
+    > *Inside the constructor, create a this.state object and define two states: userInput should be initialized as an empty string, and toDoList should be initialized as an empty array. Next, delete the comment in the render() method next to the items variable. In its place, map over the toDoList array stored in the component's internal state and dynamically render a li for each item. Try entering the string eat, code, sleep, repeat into the textarea, then click the button and see what happens.*
 
 - Here is my code in completing this:
 
@@ -1270,7 +1270,7 @@ Here is my working solution for the problem:
 
 ### [Day 31](#day-31)
 - October 2, 2018 - Solving this awesome problem: [Use Array.filter() to Dynamically Filter an Array](https://learn.freecodecamp.org/front-end-libraries/react/use-array-filter-to-dynamically-filter-an-array). Instructions:
-> In the code editor, MyComponent's state is initialized with an array of users. Some users are online and some aren't. Filter the array so you see only the users who are online. To do this, first use filter to return a new array containing only the users whose online property is true. Then, in the renderOnline variable, map over the filtered array, and return a li element for each user that contains the text of their username. Be sure to include a unique key as well, like in the last challenges.
+    > *In the code editor, MyComponent's state is initialized with an array of users. Some users are online and some aren't. Filter the array so you see only the users who are online. To do this, first use filter to return a new array containing only the users whose online property is true. Then, in the renderOnline variable, map over the filtered array, and return a li element for each user that contains the text of their username. Be sure to include a unique key as well, like in the last challenges.*
 
 - Here is my code to finish the problem:
 
@@ -1328,13 +1328,21 @@ Here is my working solution for the problem:
     ```
 ### [Day 32](#day-32)
 - October 3, 2018 - Finally finished the FCC ReactJS curriculum! I am so happy. So for the final exercise, I was introduced to a `ReactDOMServer`. This API was first introduced at [React v16.0.0](https://github.com/facebook/react/releases/tag/v16.0.0) Here is a quick note for the SSR API:
-> Core team member [Sasha Aickin wrote a great article describing React 16’s SSR improvements.](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67) According to Sasha’s synthetic benchmarks, server rendering in React 16 is roughly three times faster than React 15. “When comparing against React 15 with process.env compiled out, there’s about a 2.4x improvement in Node 4, about a 3x performance improvement in Node 6, and a full 3.8x improvement in the new Node 8.4 release. And if you compare against React 15 without compilation, React 16 has a full order of magnitude gain in SSR in the latest version of Node!” (As Sasha points out, please be aware that these numbers are based on synthetic benchmarks and may not reflect real-world performance.)
+    > *Core team member [Sasha Aickin wrote a great article describing React 16’s SSR improvements.](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67) According to Sasha’s synthetic benchmarks, server rendering in React 16 is roughly three times faster than React 15. “When comparing against React 15 with process.env compiled out, there’s about a 2.4x improvement in Node 4, about a 3x performance improvement in Node 6, and a full 3.8x improvement in the new Node 8.4 release. And if you compare against React 15 without compilation, React 16 has a full order of magnitude gain in SSR in the latest version of Node!” (As Sasha points out, please be aware that these numbers are based on synthetic benchmarks and may not reflect real-world performance.*
 
 ### [Day 33](#day-33)
 - **October 5, 2018 - TGIF! Thinking of something new to learn in React** :)
     - I think I will give FCC's [Redux curriculum](https://learn.freecodecamp.org/front-end-libraries/redux)? Yeah and why not? Im going now...
     - On my GitHub repo, I do have some React projects and I want to finish and improve them, so this is a good start to apply what I learned.
     - Completed the first Redux activity in FCC: [Create a Redux Store](https://learn.freecodecamp.org/front-end-libraries/redux/create-a-redux-store)
+
+### [Day 34](#day-34)
+- October 7, 2018 - I lost a friend today. Rest in peace my man!. The learning continues. I am right now working on my second activity at Redux. Activities done today:
+    - [Get State from the Redux Store](https://learn.freecodecamp.org/front-end-libraries/redux/get-state-from-the-redux-store)
+        > *The Redux store object provides several methods that allow you to interact with it. For example, you can retrieve the current state held in the Redux store object with the `getState()` method.*
+    - [Define a Redux Action](https://learn.freecodecamp.org/front-end-libraries/redux/define-a-redux-action)
+        > *Think of Redux actions as messengers that deliver information about events happening in your app to the Redux store. The store then conducts the business of updating state based on the action that occurred. - FCC*
+
 
     
 
