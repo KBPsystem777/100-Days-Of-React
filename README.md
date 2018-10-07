@@ -1361,8 +1361,32 @@ Here is my working solution for the problem:
                 //Dispatch the Action here:
                 store.dispatch(loginAction())
             ```
-    - [Handle Action in the store](https://learn.freecodecamp.org/front-end-libraries/redux/handle-an-action-in-the-store)
-    
+    - [Handle Action in the store](https://learn.freecodecamp.org/front-end-libraries/redux/handle-an-action-in-the-store). Solution: 
+        ```javascript
+            const defaultState = {
+                login: false
+            }
+
+            const reducer = (state = defaultState, action) => {
+                //change code below this line:
+                if(action.type === 'LOGIN') {
+                    return {
+                        login: true
+                    }
+                } else {
+                    return defaultState
+                }
+            }
+
+            const store = Redux.createStore(reducer);
+
+            const loginAction = () => {
+                return {
+                    type: 'LOGIN'
+                }
+            }
+        ```
+
 
 
     
