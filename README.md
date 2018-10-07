@@ -1342,6 +1342,27 @@ Here is my working solution for the problem:
         > *The Redux store object provides several methods that allow you to interact with it. For example, you can retrieve the current state held in the Redux store object with the `getState()` method.*
     - [Define a Redux Action](https://learn.freecodecamp.org/front-end-libraries/redux/define-a-redux-action)
         > *Think of Redux actions as messengers that deliver information about events happening in your app to the Redux store. The store then conducts the business of updating state based on the action that occurred. - FCC*
+    - [Define an Action Creator](https://learn.freecodecamp.org/front-end-libraries/redux/define-an-action-creator)
+        > An action creator is simply a JavaScript function that returns an action. In other words, action creator creates object that represents action events.
+    - [Dispatch an Action Event](https://learn.freecodecamp.org/front-end-libraries/redux/dispatch-an-action-event)
+        > dispatch method is what you use to dispatch actions to the Redux store. Calling `store.dispatch()` and passing the value returned from an action creator sends an action back to the store.
+        - My working code for the activity: 
+            ```javascript
+                const store = Redux.createStore(
+                    (state = {login: false}) => state
+                );
+
+                const loginAction = () => {
+                    return {
+                        type: 'LOGIN'
+                    }
+                };
+
+                //Dispatch the Action here:
+                store.dispatch(loginAction())
+            ```
+    - [Handle Action in the store](https://learn.freecodecamp.org/front-end-libraries/redux/handle-an-action-in-the-store)
+    
 
 
     
