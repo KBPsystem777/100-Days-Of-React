@@ -1387,10 +1387,13 @@ Here is my working solution for the problem:
             }
         ```
 
+### [Day 35](#day-35)
+- October 8, 2018 - I think I am going to have an answer now on my long standing problem on the Chat application I am working on. The good guys in FCC Forum helped me realized it as seen on this thread post:
+    > https://www.freecodecamp.org/forum/t/can-someone-help-me-figure-out-why-my-react-socket-io-app-does-not-work-on-mobile-using-chrome-safari/232115
 
+    - People at FCC made me realize that the app is looking up a `localhost` connection upon logon that is why the app doesn't work on mobile. Here is the screenshot of the possible issue:
+        > ![Hassan's issue](https://discourse-user-assets.s3.dualstack.us-east-1.amazonaws.com/original/3X/a/a/aac356fbf063a0fdc95f5b67c27550a4497623b6.png)
 
-    
-
-
+        > [Permalink on the repo](https://github.com/KBPsystem777/react-websocket/blob/bd518465ecb289f830d332f53af4265d9a999de9/src/FrontEnd/Layout.js#L7)
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
