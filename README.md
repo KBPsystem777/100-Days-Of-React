@@ -1396,6 +1396,8 @@ Here is my working solution for the problem:
 
         > [Permalink on the repo](https://github.com/KBPsystem777/react-websocket/blob/bd518465ecb289f830d332f53af4265d9a999de9/src/FrontEnd/Layout.js#L7)
 ### [Day 36](#day-36)
-- October 14, 2018
+- October 15, 2018 - How are you guys! The learning continues. I want to go ahead and review React I always have the feeling that I missed something after days of pressing the pause button in learning and coding. So I want to go through on this fresh article from FCC medium by Ohans Emmanuel as well as this intro for Redux from Traversy Media, I'll share my notes later:
+    - [These React Fundamentals You Skip may be Killing You](https://medium.freecodecamp.org/these-react-fundamentals-you-skip-may-be-killing-you-7629fb87dd4a)
+    - [Redux crash Course with React](https://youtu.be/93p3LxR9xfM)
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
