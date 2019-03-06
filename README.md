@@ -1413,6 +1413,10 @@ Here is my working solution for the problem:
 ### [Day 39](#day-39)
 - March 6, 2019 - Today, I am still working on my React SSR lesson in Next.js. I found it very satisfying. Right now, I do have 290 points, cause you'll gonna earn points every time you complete a lesson. On this stage, I was introduced to [`isomorphic-unfetch`](https://github.com/developit/unfetch). This library is a simple implementation of `fetch` API that works both on server and client side. I haven't got the chance to explore on it but I'll get there somehow. 
 
+- **09:44 PM**: Finally completed the **Fetching Data for Pages** activity on https://nextjs.org/learn. Basically, I am able to fetch data now from the TV Maze API. Next to do in the future is the further read and understand the `getInitialProps` and *data fetching* of this library.
+
+
+
 
 
 
