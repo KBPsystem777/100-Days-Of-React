@@ -1388,7 +1388,7 @@ Here is my working solution for the problem:
         ```
 
 ### [Day 35](#day-35)
-- October 8, 2018 - I think I am going to have an answer now on my long standing problem on the Chat application I am working on. The good guys in FCC Forum helped me realized it as seen on this thread post:
+- **October 8, 2018** - I think I am going to have an answer now on my long standing problem on the Chat application I am working on. The good guys in FCC Forum helped me realized it as seen on this thread post:
     > https://www.freecodecamp.org/forum/t/can-someone-help-me-figure-out-why-my-react-socket-io-app-does-not-work-on-mobile-using-chrome-safari/232115
 
     - People at FCC made me realize that the app is looking up a `localhost` connection upon logon that is why the app doesn't work on mobile. Here is the screenshot of the possible issue:
@@ -1398,20 +1398,20 @@ Here is my working solution for the problem:
 
         
 ### [Day 36](#day-36)
-- October 15, 2018 - How are you guys! The learning continues. I want to go ahead and review React I always have the feeling that I missed something after days of pressing the pause button in learning and coding. So I want to go through on this fresh article from FCC medium by Ohans Emmanuel as well as this intro for Redux from Traversy Media, I'll share my notes later:
+- **October 15, 2018** - How are you guys! The learning continues. I want to go ahead and review React I always have the feeling that I missed something after days of pressing the pause button in learning and coding. So I want to go through on this fresh article from FCC medium by Ohans Emmanuel as well as this intro for Redux from Traversy Media, I'll share my notes later:
     - [These React Fundamentals You Skip may be Killing You](https://medium.freecodecamp.org/these-react-fundamentals-you-skip-may-be-killing-you-7629fb87dd4a)
     - [Redux crash Course with React](https://youtu.be/93p3LxR9xfM)
 
 
 ### [Day 37](#day-37)
-- October 18, 2018 - Done reading the *[React Fundamentals You Skip may be Killing you, by Ohans Emmanuel](https://medium.freecodecamp.org/these-react-fundamentals-you-skip-may-be-killing-you-7629fb87dd4a)* I dont know if I understand anything but as far as I can remember, there is an argument on the article tackling the **Wasted Render**. Actually, this is considered as an issue as per Ohans, cause for example, we have a `parent` component. And the parent has 3 child components namely, Component `A`, `B` and Component `C`. Suppose the parent component want to pass a prop called `name` with the value of `Ohans` on the component `C`. Later on, the `name` prop will change to `Koleen`. That being said, React will re-render the entire parent component including component `A` and `B` even though they are not affected by the prop changes that was implemented on the Component `C`. And that is what he called as `Wasted Render` as far as I understand. Technically, that may produce a minimal performance downtime. You may not be affected by the update so bad but still the underlying performance issue is still in there. The core React team actually built some tools in order to monitor, count and get the measurement of the perf issue on your application. Just care to read: [https://reactjs.org/docs/perf.html](https://reactjs.org/docs/perf.html)
+- **October 18, 2018** - Done reading the *[React Fundamentals You Skip may be Killing you, by Ohans Emmanuel](https://medium.freecodecamp.org/these-react-fundamentals-you-skip-may-be-killing-you-7629fb87dd4a)* I dont know if I understand anything but as far as I can remember, there is an argument on the article tackling the **Wasted Render**. Actually, this is considered as an issue as per Ohans, cause for example, we have a `parent` component. And the parent has 3 child components namely, Component `A`, `B` and Component `C`. Suppose the parent component want to pass a prop called `name` with the value of `Ohans` on the component `C`. Later on, the `name` prop will change to `Koleen`. That being said, React will re-render the entire parent component including component `A` and `B` even though they are not affected by the prop changes that was implemented on the Component `C`. And that is what he called as `Wasted Render` as far as I understand. Technically, that may produce a minimal performance downtime. You may not be affected by the update so bad but still the underlying performance issue is still in there. The core React team actually built some tools in order to monitor, count and get the measurement of the perf issue on your application. Just care to read: [https://reactjs.org/docs/perf.html](https://reactjs.org/docs/perf.html)
 
 ### [Day 38](#day-38)
-- March 5, 2019 - Been so long since I logged an entry here, so here I am again. For the past few months, just an update, I got a developer job @ **MCAP Advertising**, not that big but it feels as a fulfilling job. I already shipped two sites in there but all of them are just vanilla JS and `html` sites. For the first project I got there, I am still maintaining it. It is a website for a construction firm. Industries like that doesn't really need powerful frameworks to power thier sites up. So I decided to go simple as possible which I believe is the right way. Aside from that, from the lasts months, I've been learning GraphQL. I got overwhelmed so I turned to re-read [YDKJS](https://kbpsystem777.github.io/You-Dont-Know-JS/). Fast forward to today, I am investing a knowledge in React SSR (Server Side Rendering), using Next.js
+- **March 5, 2019** - Been so long since I logged an entry here, so here I am again. For the past few months, just an update, I got a developer job @ **MCAP Advertising**, not that big but it feels as a fulfilling job. I already shipped two sites in there but all of them are just vanilla JS and `html` sites. For the first project I got there, I am still maintaining it. It is a website for a construction firm. Industries like that doesn't really need powerful frameworks to power thier sites up. So I decided to go simple as possible which I believe is the right way. Aside from that, from the lasts months, I've been learning GraphQL. I got overwhelmed so I turned to re-read [YDKJS](https://kbpsystem777.github.io/You-Dont-Know-JS/). Fast forward to today, I am investing a knowledge in React SSR (Server Side Rendering), using Next.js
 
 
 ### [Day 39](#day-39)
-- March 6, 2019 - Today, I am still working on my React SSR lesson in Next.js. I found it very satisfying. Right now, I do have 290 points, cause you'll gonna earn points every time you complete a lesson. On this stage, I was introduced to [`isomorphic-unfetch`](https://github.com/developit/unfetch). This library is a simple implementation of `fetch` API that works both on server and client side. I haven't got the chance to explore on it but I'll get there somehow. 
+- **March 6, 2019** - Today, I am still working on my React SSR lesson in Next.js. I found it very satisfying. Right now, I do have 290 points, cause you'll gonna earn points every time you complete a lesson. On this stage, I was introduced to [`isomorphic-unfetch`](https://github.com/developit/unfetch). This library is a simple implementation of `fetch` API that works both on server and client side. I haven't got the chance to explore on it but I'll get there somehow. 
 
 - **09:44 PM**: Finally completed the **Fetching Data for Pages** activity on https://nextjs.org/learn. Basically, I am able to fetch data now from the TV Maze API. Next to do in the future is the further read and understand the `getInitialProps` and *data fetching* of this library.
 
@@ -1419,7 +1419,22 @@ Here is my working solution for the problem:
 - **11:30 PM**: Read a blog from Dan -  [Why Do We Write super(props)?](https://overreacted.io/why-do-we-write-super-props/). On this post, he explained the pros and cons of using `super(props)` in on both JavaScript and React ecosystems.
 
 
+### [Day 40](#day-40)
+
+- **March 7, 2019** - Currently applying styles to my React components using [styled-jsx](https://github.com/zeit/styled-jsx). This JavaScript way of CSS styling is so cool! I highly recommend this to anyone. This library renders on both server and client ecosystem. Here are the full features of the library:
 
 
+    * Full CSS support, no tradeoffs in power
+    * Runtime size of just 3kb (gzipped, from 12kb) 
+    * Complete isolation: Selectors, animations, keyframes
+    * Built-in CSS vendor prefixing
+    * Very fast, minimal and efficient transpilation (see below)
+    * High-performance runtime-CSS-injection when not server-rendering
+    * Future-proof: Equivalent to server-renderable "Shadow CSS"
+    * Source maps support
+    * Dynamic styles and themes support
+    * CSS Preprocessing via Plugins
+
+    Source: https://github.com/zeit/styled-jsx#features
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
