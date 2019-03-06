@@ -1416,6 +1416,7 @@ Here is my working solution for the problem:
 - **09:44 PM**: Finally completed the **Fetching Data for Pages** activity on https://nextjs.org/learn. Basically, I am able to fetch data now from the TV Maze API. Next to do in the future is the further read and understand the `getInitialProps` and *data fetching* of this library.
 
 
+- **11:30 PM**: Read a blog from Dan -  [Why Do We Write super(props)?](https://overreacted.io/why-do-we-write-super-props/). On this post, he explained the pros and cons of using `super(props)` in on both JavaScript and React ecosystems.
 
 
 
