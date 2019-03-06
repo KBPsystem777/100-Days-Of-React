@@ -1410,5 +1410,11 @@ Here is my working solution for the problem:
 - March 5, 2019 - Been so long since I logged an entry here, so here I am again. For the past few months, just an update, I got a developer job @ **MCAP Advertising**, not that big but it feels as a fulfilling job. I already shipped two sites in there but all of them are just vanilla JS and `html` sites. For the first project I got there, I am still maintaining it. It is a website for a construction firm. Industries like that doesn't really need powerful frameworks to power thier sites up. So I decided to go simple as possible which I believe is the right way. Aside from that, from the lasts months, I've been learning GraphQL. I got overwhelmed so I turned to re-read [YDKJS](https://kbpsystem777.github.io/You-Dont-Know-JS/). Fast forward to today, I am investing a knowledge in React SSR (Server Side Rendering), using Next.js
 
 
+### [Day 39](#day-39)
+- March 6, 2019 - Today, I am still working on my React SSR lesson in Next.js. I found it very satisfying. Right now, I do have 290 points, cause you'll gonna earn points every time you complete a lesson. On this stage, I was introduced to [`isomorphic-unfetch`](https://github.com/developit/unfetch). This library is a simple implementation of `fetch` API that works both on server and client side. I haven't got the chance to explore on it but I'll get there somehow. 
+
+
+
+
 
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
