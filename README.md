@@ -1437,4 +1437,6 @@ Here is my working solution for the problem:
 
     Source: https://github.com/zeit/styled-jsx#features
 
+- **07:33 PM** - Just Finished the `Baiscs` module of Nextjs. To summarize my learning here, I believe I gained a lot of knowledge especially on the Server Side Rendering and Routing. It introduces me to new tools like `isomorphic-unfetch` which I think is an emerging rival of `axios`. Also I got the chance to try `styled-jsx` - a CSS in JS library.
+
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
