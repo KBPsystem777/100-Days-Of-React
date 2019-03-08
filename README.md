@@ -1439,4 +1439,8 @@ Here is my working solution for the problem:
 
 - **07:33 PM** - Just Finished the `Baiscs` module of Nextjs. To summarize my learning here, I believe I gained a lot of knowledge especially on the Server Side Rendering and Routing. It introduces me to new tools like `isomorphic-unfetch` which I think is an emerging rival of `axios`. Also I got the chance to try `styled-jsx` - a CSS in JS library.
 
+### [Day 41](#day-41)
+
+- **March 8, 2019** - TGIF! Today, I implemented what I learned at Nextjs. Like creating a dynamic pages that supports client and server side rendering. The SSR was achieved by creating an Express server. I am currently trying to make it hands-on on my portfolio site. The reason for that is I want to create a React website but with the SSR capability so that I could have a good SEO appearance.
+
 ##### *[MIT LICENSE](https://raw.githubusercontent.com/KBPsystem777/100-Days-Of-React/master/LICENSE)*
